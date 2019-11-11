@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <title>HTML Academy: Погнали</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <a class="page-header__logo">
+        <img
+          class="page-header__logo-image"
+          src="https://via.placeholder.com/100x19"
+          width="100"
+          height="19"
+          alt="Погнали"
+        />
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a href="about.html">О сервисе</a>
+            </li>
+            <li class="site-list__item">
+              <a href="form.html">Направления</a>
+            </li>
+            <li class="site-list__item">
+              <a href="catalog.html">Попутчики</a>
+            </li>
+          </ul>
+          <button class="main-nav__button button-rounded--big">
+            Авторизация
+          </button>
+          <ul class="main-nav__list contacts-list">
+            <li class="contacts-list__item contacts-list__item--phone">
+              8 800 555-86-28
+            </li>
+            <li class="contacts-list__item contacts-list__item--mail">
+              mail@htmlacademy.ru
+            </li>
+          </ul>
+          <ul class="main-nav__list social-list">
+            <li class="social-list__item">
+              <a class="social-list__link social-list__link--fb" href="#">
+                <span class="visually-hidden">Фейсбук</span>
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a class="social-list__link social-list__link--vk" href="#">
+                <span class="visually-hidden">ВКонтакте</span>
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a class="social-list__link social-list__link--inst" href="#">
+                <span class="visually-hidden">Инстаграм</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="page-main">
+      <h1 class="page-main__header">
+        Попутчики
+      </h1>
+
+      <section class="travelmates-catalog">
+        <h2 class="visually-hidden">Список попутчиков</h2>
+        <ul class="travelmates-catalog__list">
+          <li class="travelmates-catalog__card travelmate-card">
+            <h3 class="travelmate-card__name travelmate-card__name--catalog travelmate-card__name--offline">
+              Таня Фирсова
+            </h3>
+            <p>хочет посетить:</p>
+            <ul class="travelmate-card__flags--catalog flags-list">
+              <li>
+                <img
+                  class="flags-list__item"
+                  src="https://via.placeholder.com/35x24"
+                  alt="Шри-Ланка"
+                  width="35"
+                  height="24"
+                />
+                <p class="flags-list__name">Шри-Ланка</p>
+              </li>
+              <li>
+                <img
+                  class="flags-list__item"
+                  src="https://via.placeholder.com/35x24"
+                  alt="Таиланд"
+                  width="35"
+                  height="24"
+                />
+                <p class="flags-list__name">Таиланд</p>
+              </li>
+              <li>
+                <img
+                  class="flags-list__item"
+                  src="https://via.placeholder.com/35x24"
+                  alt="Сейшелы"
+                  width="35"
+                  height="24"
+                />
+                <p class="flags-list__name">Сейшелы</p>
+              </li>
+            </ul>
+            <p class="travelmate-card__tags tags">
+              #ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи
+            </p>
+            <p>транспорт:</p>
+            <ul class="travelmate-card__icons icons-list">
+              <li>
+                <img
+                  class="icons-list__icon icons-list__icon--catalog icons-list__icon--active"
+                  src="https://via.placeholder.com/24x24"
+                  alt="Самолёт"
+                  width="24"
+                  height="24"
+                />
+              </li>
+              <li>
+                <img
+                  class="icons-list__icon icons-list__icon--catalog"
+                  src="https://via.placeholder.com/24x24"
+                  alt="Автобус"
+                  width="24"
+                  height="24"
+                />
+              </li>
+              <li>
+                <img
+                  class="icons-list__icon icons-list__icon--catalog"
+                  src="https://via.placeholder.com/24x24"
+                  alt="Велосипед"
+                  width="24"
+                  height="24"
+                />
+              </li>
+              <li>
+                <img
+                  class="icons-list__icon icons-list__icon--catalog"
+                  src="https://via.placeholder.com/24x24"
+                  alt="Пешком"
+                  width="24"
+                  height="24"
+                />
+              </li>
+            </ul>
+            <img
+              class="travelmate-card__photo--catalog"
+              src="https://via.placeholder.com/270x270"
+              alt="Таиланд"
+              width="270"
+              height="270"
+            />
+            <div class="travelmate-card__level level-label level-label--catalog">
+              <span class="level-label__number level-label__number--catalog">99</span>
+              <span class="level-label__text level-label__text--catalog">level</span>
+            </div>
+            <button class="travelmate-card__button button-rounded">Позвать</button>
+          </li>
+        </ul>
+        <button
+          class="travelmates-catalog__button text-button text-button--more tex-button--plus"
+          type="button"
+        >
+          Показать еще
+        </button>
+        <div class="travelmates-catalog__pagination pagination-buttons">
+          <button class="pagination-buttons__item pagination-buttons__item--prev"><span class="visually-hidden">Назад</span></button>
+          <button class="pagination-buttons__item pagination-buttons__item--next"><span class="visually-hidden">Вперед</span></button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <a class="page-footer__logo">
+        <img
+          class="page-footer__logo-image"
+          src="https://via.placeholder.com/96x15"
+          width="96"
+          height="15"
+          alt="Погнали"
+        />
+      </a>
+      <ul class="page-footer__list social-list">
+        <li class="social-list__item social-list__item--footer">
+          <a class="social-list__link social-list__link--fb" href="#">
+            <span class="visually-hidden">Фейсбук</span>
+          </a>
+        </li>
+        <li class="social-list__item social-list__item--footer">
+          <a class="social-list__link social-list__link--vk" href="#">
+            <span class="visually-hidden">ВКонтакте</span>
+          </a>
+        </li>
+        <li class="social-list__item social-list__item--footer">
+          <a class="social-list__link social-list__link--inst" href="#">
+            <span class="visually-hidden">Инстаграм</span>
+          </a>
+        </li>
+      </ul>
+      <div class="page-footer__copyright copyright">
+        <span class="copyright__text">Разработано:</span>
+        <a
+          class="copyright__link"
+          href="https://htmlacademy.ru/intensive/adaptive"
+        >
+          <span class="visually-hidden">HTML Academy</span>
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>
