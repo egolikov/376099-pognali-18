@@ -31,7 +31,7 @@
               <a href="catalog.html">Попутчики</a>
             </li>
           </ul>
-          <button class="main-nav__button button-rounded--big">
+          <button class="main-nav__button button-rounded button-rounded--big">
             Авторизация
           </button>
           <ul class="main-nav__list contacts-list">
@@ -68,81 +68,85 @@
         Попутчики
       </h1>
 
-      <section class="travelmates-catalog">
+      <section class="companions">
         <h2 class="visually-hidden">Список попутчиков</h2>
-        <ul class="travelmates-catalog__list">
-          <li class="travelmates-catalog__card travelmate-card">
-            <h3 class="travelmate-card__name travelmate-card__name--catalog travelmate-card__name--offline">
+        <ul class="companions__list">
+          <li class="companions__card pasteboard">
+            <h3 class="pasteboard__name name name--offline name--left">
               Таня Фирсова
             </h3>
-            <p>хочет посетить:</p>
-            <ul class="travelmate-card__flags--catalog flags-list">
+            <div class="pasteboard__like like">
+              <button class="like__button" type="button"><span class="visually-hidden">Лайк</span></button>
+              <span class="like__count">1,5 M</span>
+            </div>
+            <p class="pasteboard__header">хочет посетить:</p>
+            <ul class="pasteboard__flags flags flags--names">
               <li>
                 <img
-                  class="flags-list__item"
+                  class="flags__pic"
                   src="https://via.placeholder.com/35x24"
                   alt="Шри-Ланка"
                   width="35"
                   height="24"
                 />
-                <p class="flags-list__name">Шри-Ланка</p>
+                <p class="flags__name">Шри-Ланка</p>
               </li>
               <li>
                 <img
-                  class="flags-list__item"
+                  class="flags__pic"
                   src="https://via.placeholder.com/35x24"
                   alt="Таиланд"
                   width="35"
                   height="24"
                 />
-                <p class="flags-list__name">Таиланд</p>
+                <p class="flags__name">Таиланд</p>
               </li>
               <li>
                 <img
-                  class="flags-list__item"
+                  class="flags__pic"
                   src="https://via.placeholder.com/35x24"
                   alt="Сейшелы"
                   width="35"
                   height="24"
                 />
-                <p class="flags-list__name">Сейшелы</p>
+                <p class="flags__name">Сейшелы</p>
               </li>
             </ul>
-            <p class="travelmate-card__tags tags">
+            <p class="pasteboard__tags tags--left">
               #ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи
             </p>
-            <p>транспорт:</p>
-            <ul class="travelmate-card__icons icons-list">
-              <li>
+            <p class="pasteboard__header">транспорт:</p>
+            <ul class="pasteboard__icons icons">
+              <li class="icons__item icons__item--circle">
                 <img
-                  class="icons-list__icon icons-list__icon--catalog icons-list__icon--active"
+                  class="icons-pic icons-pic--active"
                   src="https://via.placeholder.com/24x24"
                   alt="Самолёт"
                   width="24"
                   height="24"
                 />
               </li>
-              <li>
+              <li class="icons__item icons__item--circle">
                 <img
-                  class="icons-list__icon icons-list__icon--catalog"
+                  class="icons__pic"
                   src="https://via.placeholder.com/24x24"
                   alt="Автобус"
                   width="24"
                   height="24"
                 />
               </li>
-              <li>
+              <li class="icons__item icons__item--circle">
                 <img
-                  class="icons-list__icon icons-list__icon--catalog"
+                  class="icons__pic"
                   src="https://via.placeholder.com/24x24"
                   alt="Велосипед"
                   width="24"
                   height="24"
                 />
               </li>
-              <li>
+              <li class="icons__item icons__item--circle">
                 <img
-                  class="icons-list__icon icons-list__icon--catalog"
+                  class="icons__pic"
                   src="https://via.placeholder.com/24x24"
                   alt="Пешком"
                   width="24"
@@ -151,26 +155,294 @@
               </li>
             </ul>
             <img
-              class="travelmate-card__photo--catalog"
+              class="pasteboard__photo photo--circle"
               src="https://via.placeholder.com/270x270"
-              alt="Таиланд"
+              alt="Таня Фирсова"
               width="270"
               height="270"
             />
-            <div class="travelmate-card__level level-label level-label--catalog">
-              <span class="level-label__number level-label__number--catalog">99</span>
-              <span class="level-label__text level-label__text--catalog">level</span>
+            <div class="pasteboard__level level level--catalog">
+              <span class="level__number level__number--catalog">99</span>
+              <span class="level__text level__text--catalog">level</span>
             </div>
-            <button class="travelmate-card__button button-rounded">Позвать</button>
+            <button class="pasteboard__button button-rounded">Позвать!</button>
+          </li>
+          <li class="companions__card pasteboard">
+            <h3 class="pasteboard__name name name--offline name--left">
+              Петя Демин
+            </h3>
+            <div class="pasteboard__like like">
+              <button class="like__button" type="button"><span class="visually-hidden">Лайк</span></button>
+              <span class="like__count">150</span>
+            </div>
+            <p class="pasteboard__header">хочет посетить:</p>
+            <ul class="pasteboard__flags flags flags--names">
+              <li>
+                <img
+                  class="flags__pic"
+                  src="https://via.placeholder.com/35x24"
+                  alt="Бельгия"
+                  width="35"
+                  height="24"
+                />
+                <p class="flags__name">Бельгия</p>
+              </li>
+              <li>
+                <img
+                  class="flags__pic"
+                  src="https://via.placeholder.com/35x24"
+                  alt="Чехия"
+                  width="35"
+                  height="24"
+                />
+                <p class="flags__name">Чехия</p>
+              </li>
+            </ul>
+            <p class="pasteboard__tags tags--left">
+              #бургер #бар #футбол #концерт #крафт
+            </p>
+            <p class="pasteboard__header">транспорт:</p>
+            <ul class="pasteboard__icons icons">
+              <li class="icons__item icons__item--circle">
+                <img
+                  class="icons-pic icons-pic--active"
+                  src="https://via.placeholder.com/24x24"
+                  alt="Самолёт"
+                  width="24"
+                  height="24"
+                />
+              </li>
+              <li class="icons__item icons__item--circle">
+                <img
+                  class="icons__pic icons-pic--active"
+                  src="https://via.placeholder.com/24x24"
+                  alt="Автобус"
+                  width="24"
+                  height="24"
+                />
+              </li>
+              <li class="icons__item icons__item--circle">
+                <img
+                  class="icons__pic"
+                  src="https://via.placeholder.com/24x24"
+                  alt="Велосипед"
+                  width="24"
+                  height="24"
+                />
+              </li>
+              <li class="icons__item icons__item--circle">
+                <img
+                  class="icons__pic icons-pic--active"
+                  src="https://via.placeholder.com/24x24"
+                  alt="Пешком"
+                  width="24"
+                  height="24"
+                />
+              </li>
+            </ul>
+            <img
+              class="pasteboard__photo photo--circle"
+              src="https://via.placeholder.com/270x270"
+              alt="Петя Демин"
+              width="270"
+              height="270"
+            />
+            <div class="pasteboard__level level level--catalog">
+              <span class="level__number level__number--catalog">80</span>
+              <span class="level__text level__text--catalog">level</span>
+            </div>
+            <button class="pasteboard__button button-rounded">Позвать!</button>
+          </li>
+          <li class="companions__card pasteboard">
+            <h3 class="pasteboard__name name name--offline name--left">
+              Марк Смолов
+            </h3>
+            <div class="pasteboard__like like">
+              <button class="like__button" type="button"><span class="visually-hidden">Лайк</span></button>
+              <span class="like__count">1700</span>
+            </div>
+            <p class="pasteboard__header">хочет посетить:</p>
+            <ul class="pasteboard__flags flags flags--names">
+              <li>
+                <img
+                  class="flags__pic"
+                  src="https://via.placeholder.com/35x24"
+                  alt="США"
+                  width="35"
+                  height="24"
+                />
+                <p class="flags__name">США</p>
+              </li>
+              <li>
+                <img
+                  class="flags__pic"
+                  src="https://via.placeholder.com/35x24"
+                  alt="Австралия"
+                  width="35"
+                  height="24"
+                />
+                <p class="flags__name">Австралия</p>
+              </li>
+              <li>
+                <img
+                  class="flags__pic"
+                  src="https://via.placeholder.com/35x24"
+                  alt="Доминикана"
+                  width="35"
+                  height="24"
+                />
+                <p class="flags__name">Доминикана</p>
+              </li>
+            </ul>
+            <p class="pasteboard__tags tags--left">
+              #рэп #тату #хайпбист #кроссовки #суприм
+            </p>
+            <p class="pasteboard__header">транспорт:</p>
+            <ul class="pasteboard__icons icons">
+              <li class="icons__item icons__item--circle">
+                <img
+                  class="icons-pic icons-pic--active"
+                  src="https://via.placeholder.com/24x24"
+                  alt="Самолёт"
+                  width="24"
+                  height="24"
+                />
+              </li>
+              <li class="icons__item icons__item--circle">
+                <img
+                  class="icons__pic"
+                  src="https://via.placeholder.com/24x24"
+                  alt="Автобус"
+                  width="24"
+                  height="24"
+                />
+              </li>
+              <li class="icons__item icons__item--circle">
+                <img
+                  class="icons__pic icons-pic--active"
+                  src="https://via.placeholder.com/24x24"
+                  alt="Велосипед"
+                  width="24"
+                  height="24"
+                />
+              </li>
+              <li class="icons__item icons__item--circle">
+                <img
+                  class="icons__pic"
+                  src="https://via.placeholder.com/24x24"
+                  alt="Пешком"
+                  width="24"
+                  height="24"
+                />
+              </li>
+            </ul>
+            <img
+              class="pasteboard__photo photo--circle"
+              src="https://via.placeholder.com/270x270"
+              alt="Марк Смолов"
+              width="270"
+              height="270"
+            />
+            <div class="pasteboard__level level level--catalog">
+              <span class="level__number level__number--catalog">25</span>
+              <span class="level__text level__text--catalog">level</span>
+            </div>
+            <button class="pasteboard__button button-rounded">Позвать!</button>
+          </li>
+          <li class="companions__card pasteboard">
+            <h3 class="pasteboard__name name name--onine name--left">
+              Лариса Роговая
+            </h3>
+            <div class="pasteboard__like like">
+              <button class="like__button" type="button"><span class="visually-hidden">Лайк</span></button>
+              <span class="like__count">23</span>
+            </div>
+            <p class="pasteboard__header">хочет посетить:</p>
+            <ul class="pasteboard__flags flags flags--names">
+              <li>
+                <img
+                  class="flags__pic"
+                  src="https://via.placeholder.com/35x24"
+                  alt="Великобритания"
+                  width="35"
+                  height="24"
+                />
+                <p class="flags__name">Великобритания</p>
+              </li>
+              <li>
+                <img
+                  class="flags__pic"
+                  src="https://via.placeholder.com/35x24"
+                  alt="Германия"
+                  width="35"
+                  height="24"
+                />
+                <p class="flags__name">Германия</p>
+              </li>
+            </ul>
+            <p class="pasteboard__tags tags--left">
+              #ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи
+            </p>
+            <p class="pasteboard__header">транспорт:</p>
+            <ul class="pasteboard__icons icons">
+              <li class="icons__item icons__item--circle">
+                <img
+                  class="icons-pic icons-pic--active"
+                  src="https://via.placeholder.com/24x24"
+                  alt="Самолёт"
+                  width="24"
+                  height="24"
+                />
+              </li>
+              <li class="icons__item icons__item--circle">
+                <img
+                  class="icons__pic icons-pic--active"
+                  src="https://via.placeholder.com/24x24"
+                  alt="Автобус"
+                  width="24"
+                  height="24"
+                />
+              </li>
+              <li class="icons__item icons__item--circle">
+                <img
+                  class="icons__pic"
+                  src="https://via.placeholder.com/24x24"
+                  alt="Велосипед"
+                  width="24"
+                  height="24"
+                />
+              </li>
+              <li class="icons__item icons__item--circle">
+                <img
+                  class="icons__pic"
+                  src="https://via.placeholder.com/24x24"
+                  alt="Пешком"
+                  width="24"
+                  height="24"
+                />
+              </li>
+            </ul>
+            <img
+              class="pasteboard__photo photo--circle"
+              src="https://via.placeholder.com/270x270"
+              alt="Лариса Роговая"
+              width="270"
+              height="270"
+            />
+            <div class="pasteboard__level level level--catalog">
+              <span class="level__number level__number--catalog">50</span>
+              <span class="level__text level__text--catalog">level</span>
+            </div>
+            <button class="pasteboard__button button-rounded">Позвать!</button>
           </li>
         </ul>
         <button
-          class="travelmates-catalog__button text-button text-button--more tex-button--plus"
+          class="companions__button text-button text-button--more"
           type="button"
         >
           Показать еще
         </button>
-        <div class="travelmates-catalog__pagination pagination-buttons">
+        <div class="companions__pagination pagination-buttons">
           <button class="pagination-buttons__item pagination-buttons__item--prev"><span class="visually-hidden">Назад</span></button>
           <button class="pagination-buttons__item pagination-buttons__item--next"><span class="visually-hidden">Вперед</span></button>
         </div>
