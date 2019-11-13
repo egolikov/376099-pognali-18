@@ -31,15 +31,15 @@
               <a href="catalog.html">Попутчики</a>
             </li>
           </ul>
-          <button class="main-nav__button button-rounded button-rounded--big">
+          <a class="main-nav__button button-rounded button-rounded--big" href="login.html">
             Авторизация
-          </button>
+          </a>
           <ul class="main-nav__list contacts-list">
             <li class="contacts-list__item contacts-list__item--phone">
-              8 800 555-86-28
+              <a href="tel:+88005558628">8 800 555-86-28</a>
             </li>
             <li class="contacts-list__item contacts-list__item--mail">
-              mail@htmlacademy.ru
+              <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
             </li>
           </ul>
           <ul class="main-nav__list social-list">
@@ -73,14 +73,14 @@
         <b class="intro__slogan">В путешествие с крутыми попутчиками!</b>
         <ul class="intro__buttons-list buttons-list">
           <li class="buttons-list__item">
-            <button class="button-rounded button-rounded--phone" type="button">
+            <a class="button-rounded button-rounded--phone" href="tel:+88005558628">
               <span class="visually-hidden">Позвонить</span>
-            </button>
+            </a>
           </li>
           <li class="buttons-list__item">
-            <button class="button-rounded button-rounded--mail" type="button">
+            <a class="button-rounded button-rounded--mail" href="mailto:mail@htmlacademy.ru">
               <span class="visually-hidden">Написать</span>
-            </button>
+            </a>
           </li>
           <li class="buttons-list__item">
             <button class="button-rounded" type="button">Авторизация</button>
@@ -96,7 +96,7 @@
           <li class="features-list__item features-list__item--dark-orange">Выберите направление</li>
           <li class="features-list__item features-list__item--orange">Изучите идеи путешественников</li>
           <li class="features-list__item features-list__item--light-orange">Находите тех, кто похож на вас</li>
-          <li class="features-list__itemfeatures-list__item--yellow">Путешествуйте вместе!</li>
+          <li class="features-list__item features-list__item--yellow">Путешествуйте вместе!</li>
         </ol>
       </section>
 
@@ -107,10 +107,12 @@
           тобой! Делитесь своими идеями путешествий и черпайте вдохновение в
           чужих.
         </p>
-        <b class="about__bold bold">
-          А если найдете кого-то близкого по духу — скорее зовите в совместный
-          трип!
-        </b>
+        <p class="about__bold bold">
+          <b>
+            А если найдете кого-то близкого по духу — скорее зовите в совместный
+            трип!
+          </b>
+        </p>
       </section>
 
       <section class="countries">
@@ -121,8 +123,8 @@
         </p>
         <ul class="countries__list">
           <li class="countries__card country-card">
-            <div class="country-card__info">
-              <h3 class="country-card__name country-card__name--thailand">
+            <div class="country-card__info country-card__info--thailand">
+              <h3 class="country-card__name">
                 Таиланд
               </h3>
               <p class="country-card__description">Джунгли зовут!</p>
@@ -137,8 +139,8 @@
             />
           </li>
           <li class="countries__card country-card">
-            <div class="country-card__info">
-              <h3 class="country-card__name country-card__name--france">
+            <div class="country-card__info country-card__info--france">
+              <h3 class="country-card__name">
                 Франция
               </h3>
               <p class="country-card__description">Трэ бьен, манифик!</p>
@@ -153,8 +155,8 @@
             />
           </li>
           <li class="countries__card country-card country-card--fade">
-            <div class="country-card__info">
-              <h3 class="country-card__name country-card__name--czech">
+            <div class="country-card__info country-card__info--czech">
+              <h3 class="country-card__name">
                 Чехия
               </h3>
               <p class="country-card__description">Закоулки старой Европы</p>
@@ -169,12 +171,12 @@
             />
           </li>
         </ul>
-        <button
+        <a
           class="countries__button button-square button-square--triangle"
-          type="button"
+          href="form.html"
         >
           Показать все
-        </button>
+        </a>
       </section>
 
       <section class="travelmates">
@@ -183,9 +185,11 @@
           Все мы индивидуальны и у каждого свой взгляд на идеальный отдых.
           Одному нужен пляж и коктейль, а другому маршрут для хайкинга.
         </p>
-        <b class="travelmates__bold bold">
-          Теперь можно легко найти единомышленников!
-        </b>
+        <p class="travelmates__bold bold">
+          <b>
+            Теперь можно легко найти единомышленников!
+          </b>
+        </p>
         <ul class="travelmates__list">
           <li class="travelmates__card traveler">
             <h3 class="traveler__name name name--offline">
@@ -351,12 +355,12 @@
             </div>
           </li>
         </ul>
-        <button
+        <a
           class="travelmates__button button-square button-square--triangle"
-          type="button"
+          href="catalog.html"
         >
           Показать всех
-        </button>
+        </a>
       </section>
 
       <section class="rates">
@@ -373,9 +377,9 @@
             Кастомный цвет карточки<br />59 руб./мес
           </li>
         </ol>
-        <button class="rates__button text-button" type="button">
+        <a class="rates__button text-button" href="price.html">
           Показать тарифы для бизнеса
-        </button>
+        </a>
       </section>
     </main>
 
