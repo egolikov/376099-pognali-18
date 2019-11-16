@@ -6,7 +6,7 @@
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo">
+      <a class="page-header__logo" href="index.html">
         <img
           class="page-header__logo-image"
           src="https://via.placeholder.com/100x19"
@@ -21,14 +21,14 @@
         </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
-            <li>
-              <a class="site-list__link" href="about.html">О сервисе</a>
+            <li class="site-list__item">
+              <a href="#">О сервисе</a>
             </li>
-            <li>
-              <a class="site-list__link" href="form.html">Направления</a>
+            <li class="site-list__item">
+              <a href="form.html">Направления</a>
             </li>
-            <li>
-              <a class="site-list__link" href="catalog.html">Попутчики</a>
+            <li class="site-list__item">
+              <a href="catalog.html">Попутчики</a>
             </li>
           </ul>
           <button class="main-nav__button button-rounded button-rounded--big">
@@ -67,6 +67,454 @@
       <h1 class="page-main__header">
         Направления
       </h1>
+
+      <section class="info">
+        <h2 class="visually-hidden">Информация</h2>
+        <div class="info__level level level--big">
+          <span class="level__number level__number--big">80</span>
+          <span class="level__text level__text--big">level</span>
+        </div>
+        <img
+          class="info__photo photo photo--circle photo--info"
+          src="https://via.placeholder.com/100x100"
+          alt="Таня Фирсова"
+          width="100"
+          height="100"
+        />
+        <button
+          class="info__button button-rounded button-rounded--blue"
+          type="submit"
+        >
+          Сменить фото
+        </button>
+        <form class="info__wrapper">
+          <label class="info__header" for="tags">Тэги</label>
+          <textarea class="info__tags tags tags--left" name="tags" id="tags">#бургер #бар #футбол #концерт #крафт</textarea>
+        </form>
+        <form class="info__wrapper">
+          <label class="info__header">Транспорт</label>
+          <ul class="info__icons icons">
+            <li class="icons__item icons__item--circle icons__item--white">
+              <input
+                class="info__check"
+                type="checkbox"
+                name="plane"
+                id="plane"
+                checked
+              />
+              <label for="plane">
+                <img
+                  class="icons__pic icons__pic--active"
+                  src="https://via.placeholder.com/24x24"
+                  alt="Самолёт"
+                  width="24"
+                  height="24"
+                />
+                <span class="visually-hidden">Самолёт</span>
+              </label>
+            </li>
+            <li class="icons__item icons__item--circle icons__item--white">
+              <input
+                class="info__check"
+                type="checkbox"
+                name="bus"
+                id="bus"
+                checked
+              />
+              <label for="bus">
+                <img
+                  class="icons__pic icons__pic--active"
+                  src="https://via.placeholder.com/24x24"
+                  alt="Автобус"
+                  width="24"
+                  height="24"
+                />
+                <span class="visually-hidden">Автобус</span>
+              </label>
+            </li>
+            <li class="icons__item icons__item--circle icons__item--white">
+              <input
+                class="info__check"
+                type="checkbox"
+                name="cycle"
+                id="cycle"
+              />
+              <label for="cycle">
+                <img
+                  class="icons__pic"
+                  src="https://via.placeholder.com/24x24"
+                  alt="Велосипед"
+                  width="24"
+                  height="24"
+                />
+                <span class="visually-hidden">Велосипед</span>
+              </label>
+            </li>
+            <li class="icons__item icons__item--circle icons__item--white">
+              <input
+                class="info__check"
+                type="checkbox"
+                name="walk"
+                id="walk"
+                checked
+              />
+              <label for="walk">
+                <img
+                  class="icons__pic icons__pic--active"
+                  src="https://via.placeholder.com/24x24"
+                  alt="Пешком"
+                  width="24"
+                  height="24"
+                />
+                <span class="visually-hidden">Пешком</span>
+              </label>
+            </li>
+          </ul>
+        </form>
+      </section>
+
+      <section class="plans">
+        <h2 class="plans__title title title-blue">Мои планы</h2>
+        <ol class="plans__list">
+          <li class="plans__item plan">
+            <h3 class="plan__header">Франция, Италия</h3>
+            <p class="plan__text">3 попутчика</p>
+            <p class="plan__text">26 мар — 29 мар</p>
+            <a class="plan__link" href="#">Изменить</a>
+          </li>
+          <li class="plans__item plan">
+            <h3 class="plan__header">Таиланд, Индонезия</h3>
+            <p class="plan__text">1 попутчик</p>
+            <p class="plan__text">1 июл — 15 июл</p>
+            <a class="plan__link" href="#">Изменить</a>
+          </li>
+        </ol>
+      </section>
+
+      <section class="add">
+        <h2 class="add__title title title-blue">Добавить план:</h2>
+        <ul class="add__pagination">
+          <li class="add__dot add__dot--current"></li>
+          <li class="add__dot"></li>
+          <li class="add__dot"></li>
+        </ul>
+        <form
+          class="add__form"
+          action="https://echo.htmlacademy.ru"
+          method="get"
+        >
+          <fieldset class="add__dates">
+            <legend class="add__legend">Шаг 1. Даты пребывания</legend>
+            <p class="add__description description description--dark">
+              Укажите предпочтительное количество попутчиков, которых вы хотели
+              бы позвать в поездку и ее предполагаемую длительность.
+            </p>
+            <div class="add__counter counter">
+              <label class="counter__label" for="people">Ищу попутчиков:</label>
+              <span class="counter__type">Чел.</span>
+              <button
+                class="counter__button counter__button--minus"
+                type="button"
+              >
+                <span class="visually-hidden">-</span>
+              </button>
+              <input
+                class="counter__input"
+                type="number"
+                name="people"
+                id="people"
+              />
+              <button
+                class="counter__button counter__button--minus"
+                type="button"
+              >
+                <span class="visually-hidden">+</span>
+              </button>
+            </div>
+            <div class="add__counter counter">
+              <label class="counter__label" for="days">Длительность</label>
+              <span class="counter__type">Дн.</span>
+              <button
+                class="counter__button counter__button--minus"
+                type="button"
+              >
+                <span class="visually-hidden">-</span>
+              </button>
+              <input
+                class="counter__input"
+                type="number"
+                name="days"
+                id="days"
+              />
+              <button
+                class="counter__button counter__button--minus"
+                type="button"
+              >
+                <span class="visually-hidden">+</span>
+              </button>
+            </div>
+            <input
+              class="add__checkbox"
+              type="checkbox"
+              name="children"
+              id="children"
+              checked
+            />
+            <label class="add__label-checkbox" for="children"
+              >Можно с детьми</label
+            >
+            <div class="add__calendar calendar">
+              <div class="calendar__month">
+                <button class="calendar__prev"></button>
+                <span class="calendar__name">Март 2019</span>
+                <button class="calendar__next"></button>
+              </div>
+              <table class="calendar__days">
+                <thead>
+                  <tr class="calendar__week">
+                    <th class="calendar__weekdays">П</th>
+                    <th class="calendar__weekdays">В</th>
+                    <th class="calendar__weekdays">С</th>
+                    <th class="calendar__weekdays">Ч</th>
+                    <th class="calendar__weekdays">П</th>
+                    <th class="calendar__weekdays calendar__weekdays--weekend">
+                      С
+                    </th>
+                    <th class="calendar__weekdays calendar__weekdays--weekend">
+                      В
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="calendar__day calendar__day--disabled">23</td>
+                    <td class="calendar__day calendar__day--disabled">24</td>
+                    <td class="calendar__day calendar__day--disabled">25</td>
+                    <td class="calendar__day calendar__day--disabled">26</td>
+                    <td class="calendar__day calendar__day--disabled">27</td>
+                    <td class="calendar__day calendar__day--disabled">28</td>
+                    <td class="calendar__day calendar__day--disabled">1</td>
+                  </tr>
+                  <tr>
+                    <td class="calendar__day calendar__day--disabled">2</td>
+                    <td class="calendar__day calendar__day--disabled">3</td>
+                    <td class="calendar__day calendar__day--disabled">4</td>
+                    <td class="calendar__day calendar__day--disabled">5</td>
+                    <td class="calendar__day calendar__day--disabled">6</td>
+                    <td class="calendar__day calendar__day--disabled">7</td>
+                    <td class="calendar__day calendar__day--disabled">8</td>
+                  </tr>
+                  <tr>
+                    <td class="calendar__day calendar__day--disabled">9</td>
+                    <td class="calendar__day calendar__day--disabled">10</td>
+                    <td class="calendar__day calendar__day--disabled">11</td>
+                    <td class="calendar__day calendar__day--disabled">12</td>
+                    <td class="calendar__day calendar__day--disabled">13</td>
+                    <td class="calendar__day calendar__day--disabled">14</td>
+                    <td class="calendar__day calendar__day--disabled">15</td>
+                  </tr>
+                  <tr>
+                    <td class="calendar__day calendar__day--disabled">16</td>
+                    <td class="calendar__day calendar__day--disabled">17</td>
+                    <td class="calendar__day calendar__day--disabled">18</td>
+                    <td class="calendar__day calendar__day--disabled">19</td>
+                    <td class="calendar__day calendar__day--disabled">20</td>
+                    <td class="calendar__day calendar__day--disabled">21</td>
+                    <td class="calendar__day calendar__day--disabled">22</td>
+                  </tr>
+                  <tr>
+                    <td class="calendar__day calendar__day--disabled">23</td>
+                    <td class="calendar__day calendar__day--disabled">24</td>
+                    <td class="calendar__day calendar__day--disabled">25</td>
+                    <td
+                      class="calendar__day calendar__day--active calendar__day--current"
+                    >
+                      26
+                    </td>
+                    <td class="calendar__day calendar__day--active">27</td>
+                    <td class="calendar__day calendar__day--active">28</td>
+                    <td class="calendar__day">29</td>
+                  </tr>
+                  <tr>
+                    <td class="calendar__day">30</td>
+                    <td class="calendar__day">31</td>
+                    <td class="calendar__day">1</td>
+                    <td class="calendar__day">2</td>
+                    <td class="calendar__day">3</td>
+                    <td class="calendar__day">4</td>
+                    <td class="calendar__day">5</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <button class="add__button button-rounded" type="button">
+              Следующий шаг
+            </button>
+          </fieldset>
+          <fieldset class="add__route">
+            <legend class="add__legend">Шаг 2. Маршрут</legend>
+            <p class="add__description description description--dark">
+              Укажите предпочтительное количество попутчиков, которых вы хотели
+              бы позвать в поездку и ее предполагаемую длительность.
+            </p>
+            <div class="add__country">
+              <input
+                class="add__name"
+                type="text"
+                name="country-1"
+                id="country-1"
+                value="Босния и Герцеговина"
+              />
+              <label class="visually-hidden" for="country-1"
+                >Название страны</label
+              >
+              <span class="add__flag add__flag--bosnia"></span>
+              <button class="add__delete">
+                <span class="visually-hidden">Удалить</span>
+              </button>
+            </div>
+            <div class="add__country">
+              <input
+                class="add__name"
+                type="text"
+                name="country-2"
+                id="country-2"
+                value="Чехия"
+              />
+              <label class="visually-hidden" for="country-2"
+                >Название страны</label
+              >
+              <span class="add__flag add__flag--czech"></span>
+              <button class="add__delete">
+                <span class="visually-hidden">Удалить</span>
+              </button>
+            </div>
+            <div class="add__country">
+              <input
+                class="add__name add__name--choose"
+                type="text"
+                name="country-3"
+                id="country-3"
+                value="Выберите страну"
+              />
+              <label class="visually-hidden" for="country-3"
+                >Название страны</label
+              >
+              <button class="add__delete">
+                <span class="visually-hidden">Удалить</span>
+              </button>
+              <div class="add__dropdown">
+                <table class="add____letters letters">
+                  <tbody>
+                    <tr>
+                      <td class="letters__item letters__item--active">А</td>
+                      <td class="letters__item">Б</td>
+                      <td class="letters__item">В</td>
+                      <td class="letters__item">Г</td>
+                      <td class="letters__item">Д</td>
+                    </tr>
+                    <tr>
+                      <td class="letters__item">Е</td>
+                      <td class="letters__item">З</td>
+                      <td class="letters__item">И</td>
+                      <td class="letters__item">К</td>
+                      <td class="letters__item">Л</td>
+                    </tr>
+                    <tr>
+                      <td class="letters__item">М</td>
+                      <td class="letters__item">Н</td>
+                      <td class="letters__item">О</td>
+                      <td class="letters__item">П</td>
+                      <td class="letters__item">Р</td>
+                    </tr>
+                    <tr>
+                      <td class="letters__item">С</td>
+                      <td class="letters__item">Т</td>
+                      <td class="letters__item">У</td>
+                      <td class="letters__item">Ф</td>
+                      <td class="letters__item">Х</td>
+                    </tr>
+                    <tr>
+                      <td class="letters__item">Ч</td>
+                      <td class="letters__item">Ш</td>
+                      <td class="letters__item">Э</td>
+                      <td class="letters__item">Ю</td>
+                      <td class="letters__item">Я</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <ul class="add__countries countries-list">
+                  <li class="countries-list__country">Афганистан</li>
+                  <li class="countries-list__country">Албания</li>
+                  <li class="countries-list__country">Алжир</li>
+                  <li class="countries-list__country">Андорра</li>
+                  <li class="countries-list__country">Аргентина</li>
+                  <li class="countries-list__country">Армения</li>
+                  <li class="countries-list__country">Австралия</li>
+                  <li class="countries-list__country">Австрия</li>
+                  <li class="countries-list__country">Азербайджан</li>
+                </ul>
+              </div>
+            </div>
+            <button class="add__new" type="button">Добавить страну</button>
+            <button class="add__button button-rounded" type="button">
+              Следующий шаг
+            </button>
+            <button
+              class="add__text-button text-button text-button--caps"
+              type="button"
+            >
+              На шаг назад
+            </button>
+          </fieldset>
+          <fieldset class="add__entertainment">
+            <legend class="add__legend">Шаг 3. Развлечения</legend>
+            <p class="add__description description description--dark">
+              Наконец, расскажите о своих планах времяпровождения. Можно писать
+              в свободной форме и ставить тэги.
+            </p>
+            <label
+              class="add__label-area add__label-area--bosnia"
+              for="country-1-text"
+            >
+              Босния и Герцеговина
+            </label>
+            <textarea
+              class="add__text"
+              name="country-1-text"
+              id="country-1-text"
+              cols="30"
+              rows="10"
+              placeholder="План действий"
+            ></textarea>
+            <label
+              class="add__label-area add__label-area--bosnia"
+              for="country-2-text"
+            >
+              Чехия
+            </label>
+            <textarea
+              class="add__text"
+              name="country-2-text"
+              id="country-2-text"
+              cols="30"
+              rows="10"
+              placeholder="План действий"
+            >
+              Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.
+            </textarea>
+            <button class="add__button button-rounded" type="submit">
+              Отправить
+            </button>
+            <button
+              class="add__text-button text-button text-button--caps"
+              type="button"
+            >
+              На шаг назад
+            </button>
+          </fieldset>
+        </form>
+      </section>
     </main>
 
     <footer class="page-footer">
