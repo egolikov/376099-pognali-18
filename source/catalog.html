@@ -6,7 +6,7 @@
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo">
+      <a class="page-header__logo" href="index.html">
         <img
           class="page-header__logo-image"
           src="https://via.placeholder.com/100x19"
@@ -22,7 +22,7 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
-              <a href="about.html">О сервисе</a>
+              <a href="#">О сервисе</a>
             </li>
             <li class="site-list__item">
               <a href="form.html">Направления</a>
@@ -68,17 +68,348 @@
         Попутчики
       </h1>
 
+      <section class="filter-country">
+        <h2 class="filter-country__header">Фильтрация по странам</h2>
+        <button class="filter-country__toggle" type="button">
+          <span class="visually-hidden">Показать фильтр</span>
+        </button>
+        <div class="filter-country__wrapper">
+          <ul class="filter-country__parts">
+            <li class="filter-country__part filter-country__part--active">
+              <a>Европа</a>
+            </li>
+            <li class="filter-country__part"><a href="#">Азия</a></li>
+            <li class="filter-country__part"><a href="#">Америка</a></li>
+            <li class="filter-country__part"><a href="#">Острова</a></li>
+          </ul>
+          <table class="filter-country__letters letters">
+            <tbody>
+              <tr>
+                <td class="letters__item letters__item--active"><a>А</a></td>
+                <td class="letters__item"><a href="#">Б</a></td>
+                <td class="letters__item"><a href="#">В</a></td>
+                <td class="letters__item"><a href="#">Г</a></td>
+                <td class="letters__item"><a href="#">Д</a></td>
+              </tr>
+              <tr>
+                <td class="letters__item"><a href="#">Е</a></td>
+                <td class="letters__item"><a href="#">З</a></td>
+                <td class="letters__item"><a href="#">И</a></td>
+                <td class="letters__item"><a href="#">К</a></td>
+                <td class="letters__item"><a href="#">Л</a></td>
+              </tr>
+              <tr>
+                <td class="letters__item"><a href="#">М</a></td>
+                <td class="letters__item"><a href="#">Н</a></td>
+                <td class="letters__item"><a href="#">О</a></td>
+                <td class="letters__item"><a href="#">П</a></td>
+                <td class="letters__item"><a href="#">Р</a></td>
+              </tr>
+              <tr>
+                <td class="letters__item"><a href="#">С</a></td>
+                <td class="letters__item"><a href="#">Т</a></td>
+                <td class="letters__item"><a href="#">У</a></td>
+                <td class="letters__item"><a href="#">Ф</a></td>
+                <td class="letters__item"><a href="#">Х</a></td>
+              </tr>
+              <tr>
+                <td class="letters__item"><a href="#">Ч</a></td>
+                <td class="letters__item"><a href="#">Ш</a></td>
+                <td class="letters__item"><a href="#">Э</a></td>
+                <td class="letters__item"><a href="#">Ю</a></td>
+                <td class="letters__item"><a href="#">Я</a></td>
+              </tr>
+            </tbody>
+          </table>
+          <ul class="filter-country__countries countries-list">
+            <li class="countries-list__country">
+              <a href="#">Афганистан</a>
+            </li>
+            <li class="countries-list__country">
+              <a href="#">Албания</a>
+            </li>
+            <li class="countries-list__country">
+              <a href="#">Алжир</a>
+            </li>
+            <li class="countries-list__country">
+              <a href="#">Андорра</a>
+            </li>
+            <li class="countries-list__country">
+              <a href="#">Аргентина</a>
+            </li>
+            <li class="countries-list__country">
+              <a href="#">Армения</a>
+            </li>
+            <li class="countries-list__country">
+              <a href="#">Австралия</a>
+            </li>
+            <li class="countries-list__country">
+              <a href="#">Австрия</a>
+            </li>
+            <li class="countries-list__country">
+              <a href="#">Азербайджан</a>
+            </li>
+          </ul>
+          <button
+            class="filter-country__button button-rounded button-rounded--close"
+            type="button"
+          >
+            Свернуть
+          </button>
+        </div>
+      </section>
+
+      <section class="filters">
+        <h2 class="filters__header">Подберите идеального попутчика</h2>
+        <form
+          class="filters__form"
+          action="https://echo.htmlacademy.ru"
+          method="get"
+        >
+          <fieldset class="filters__fieldset">
+            <legend class="filters__legend">Хобби</legend>
+            <ul>
+              <li class="filters__item">
+                <input
+                  class="filters__check"
+                  type="checkbox"
+                  name="reading"
+                  id="reading"
+                />
+                <label class="filters__label filters__label" for="reading"
+                  >Чтение</label
+                >
+              </li>
+              <li class="filters__item">
+                <input
+                  class="filters__check"
+                  type="checkbox"
+                  name="sport"
+                  id="sport"
+                  checked
+                />
+                <label class="filters__label" for="sport">Спорт</label>
+              </li>
+              <li class="filters__item">
+                <input
+                  class="filters__check"
+                  type="checkbox"
+                  name="guitar"
+                  id="guitar"
+                />
+                <label class="filters__label" for="guitar">Гитара</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="filters__fieldset">
+            <legend class="filters__legend filters__legend--opened">
+              Музыка
+            </legend>
+            <ul>
+              <li class="filters__item">
+                <input
+                  class="filters__check"
+                  type="checkbox"
+                  name="rock"
+                  id="rock"
+                  checked
+                />
+                <label class="filters__label filters__label" for="rock"
+                  >Тяжелый рок</label
+                >
+              </li>
+              <li class="filters__item">
+                <input
+                  class="filters__check"
+                  type="checkbox"
+                  name="rap"
+                  id="rap"
+                />
+                <label class="filters__label" for="rap">Русский рэп</label>
+              </li>
+              <li class="filters__item">
+                <input
+                  class="filters__check"
+                  type="checkbox"
+                  name="dance"
+                  id="dance"
+                />
+                <label class="filters__label" for="dance">Евродэнс</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="filters__fieldset">
+            <legend class="filters__legend">Еда</legend>
+            <ul>
+              <li class="filters__item">
+                <input
+                  class="filters__check"
+                  type="checkbox"
+                  name="asia"
+                  id="asia"
+                />
+                <label class="filters__label filters__label" for="asia"
+                  >Азиатская</label
+                >
+              </li>
+              <li class="filters__item">
+                <input
+                  class="filters__check"
+                  type="checkbox"
+                  name="euro"
+                  id="euro"
+                  checked
+                />
+                <label class="filters__label" for="euro">Европейская</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="filters__fieldset">
+            <legend class="filters__legend filters__legend--opened">
+              Транспорт
+            </legend>
+            <ul class="filters__icons icons">
+              <li class="icons__item icons__item--circle icons__item--white">
+                <input
+                  class="filters__check"
+                  type="checkbox"
+                  name="plane"
+                  id="plane"
+                  checked
+                />
+                <label for="plane">
+                  <img
+                    class="icons__pic icons__pic--active"
+                    src="https://via.placeholder.com/24x24"
+                    alt="Самолёт"
+                    width="24"
+                    height="24"
+                  />
+                  <span class="visually-hidden">Самолёт</span>
+                </label>
+              </li>
+              <li class="icons__item icons__item--circle icons__item--white">
+                <input
+                  class="filters__check"
+                  type="checkbox"
+                  name="bus"
+                  id="bus"
+                  checked
+                />
+                <label for="bus">
+                  <img
+                    class="icons__pic icons__pic--active"
+                    src="https://via.placeholder.com/24x24"
+                    alt="Автобус"
+                    width="24"
+                    height="24"
+                  />
+                  <span class="visually-hidden">Автобус</span>
+                </label>
+              </li>
+              <li class="icons__item icons__item--circle icons__item--white">
+                <input
+                  class="filters__check"
+                  type="checkbox"
+                  name="cycle"
+                  id="cycle"
+                />
+                <label for="cycle">
+                  <img
+                    class="icons__pic"
+                    src="https://via.placeholder.com/24x24"
+                    alt="Велосипед"
+                    width="24"
+                    height="24"
+                  />
+                  <span class="visually-hidden">Велосипед</span>
+                </label>
+              </li>
+              <li class="icons__item icons__item--circle icons__item--white">
+                <input
+                  class="filters__check"
+                  type="checkbox"
+                  name="walk"
+                  id="walk"
+                  checked
+                />
+                <label for="walk">
+                  <img
+                    class="icons__pic icons__pic--active"
+                    src="https://via.placeholder.com/24x24"
+                    alt="Пешком"
+                    width="24"
+                    height="24"
+                  />
+                  <span class="visually-hidden">Пешком</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="filters__fieldset">
+            <legend class="filters__legend filters__legend--opened">
+              Левел
+            </legend>
+            <div class="filters__slider slider">
+              <div class="slider__inputs">
+                <input
+                  class="slider__input"
+                  type="text"
+                  name="minlevel"
+                  id="minlevel"
+                />
+                <label class="visually-hidden" for="minlevel"
+                  >Минимальный уровень</label
+                >
+                <input
+                  class="slider__input"
+                  type="text"
+                  name="maxlevel"
+                  id="maxlevel"
+                />
+                <label class="visually-hidden" for="maxlevel"
+                  >Максимальный уровень</label
+                >
+              </div>
+              <div class="slider__range">
+                <div class="slider__controls">
+                  <span class="slider__handler slider__handler--min"></span>
+                  <span class="slider__handler slider__handler--max"></span>
+                </div>
+              </div>
+            </div>
+          </fieldset>
+          <button
+            class="filters__button button-rounded button-rounded--white"
+            type="submit"
+          >
+            Показать
+          </button>
+        </form>
+      </section>
+
       <section class="companions">
         <h2 class="visually-hidden">Список попутчиков</h2>
         <ul class="companions__list">
           <li class="companions__card pasteboard">
-            <a href="profile.html">
+            <a href="#">
               <h3 class="pasteboard__name name name--offline name--left">
                 Таня Фирсова
               </h3>
             </a>
+            <a href="#">
+              <img
+                class="pasteboard__photo photo photo--circle"
+                src="https://via.placeholder.com/70x70"
+                alt="Таня Фирсова"
+                width="70"
+                height="70"
+              />
+            </a>
             <div class="pasteboard__like like">
-              <button class="like__button" type="button"><span class="visually-hidden">Лайк</span></button>
+              <button class="like__button" type="button">
+                <span class="visually-hidden">Лайк</span>
+              </button>
               <span class="like__count">1,5 M</span>
             </div>
             <p class="pasteboard__header">хочет посетить:</p>
@@ -156,29 +487,31 @@
                 />
               </li>
             </ul>
-            <a href="profile.html">
-              <img
-                class="pasteboard__photo photo photo--circle"
-                src="https://via.placeholder.com/70x70"
-                alt="Таня Фирсова"
-                width="70"
-                height="70"
-              />
-            </a>
             <div class="pasteboard__level level level--catalog">
               <span class="level__number level__number--catalog">99</span>
               <span class="level__text level__text--catalog">level</span>
             </div>
-            <a class="pasteboard__button button-rounded" href="respond.html">Позвать!</a>
+            <a class="pasteboard__button button-rounded" href="#">Позвать!</a>
           </li>
           <li class="companions__card pasteboard">
-            <a href="profile.html">
+            <a href="#">
               <h3 class="pasteboard__name name name--offline name--left">
                 Петя Демин
               </h3>
             </a>
+            <a href="#">
+              <img
+                class="pasteboard__photo photo photo--circle"
+                src="https://via.placeholder.com/70x70"
+                alt="Петя Демин"
+                width="70"
+                height="70"
+              />
+            </a>
             <div class="pasteboard__like like">
-              <button class="like__button" type="button"><span class="visually-hidden">Лайк</span></button>
+              <button class="like__button" type="button">
+                <span class="visually-hidden">Лайк</span>
+              </button>
               <span class="like__count">150</span>
             </div>
             <p class="pasteboard__header">хочет посетить:</p>
@@ -246,29 +579,31 @@
                 />
               </li>
             </ul>
-            <a href="profile.html">
-              <img
-                class="pasteboard__photo photo photo--circle"
-                src="https://via.placeholder.com/70x70"
-                alt="Петя Демин"
-                width="70"
-                height="70"
-              />
-            </a>
             <div class="pasteboard__level level level--catalog">
               <span class="level__number level__number--catalog">80</span>
               <span class="level__text level__text--catalog">level</span>
             </div>
-            <a class="pasteboard__button button-rounded" href="respond.html">Позвать!</a>
+            <a class="pasteboard__button button-rounded" href="#">Позвать!</a>
           </li>
           <li class="companions__card pasteboard">
-            <a href="profile.html">
+            <a href="#">
               <h3 class="pasteboard__name name name--offline name--left">
                 Марк Смолов
               </h3>
             </a>
+            <a href="#">
+              <img
+                class="pasteboard__photo photo photo--circle"
+                src="https://via.placeholder.com/70x70"
+                alt="Марк Смолов"
+                width="70"
+                height="70"
+              />
+            </a>
             <div class="pasteboard__like like">
-              <button class="like__button" type="button"><span class="visually-hidden">Лайк</span></button>
+              <button class="like__button" type="button">
+                <span class="visually-hidden">Лайк</span>
+              </button>
               <span class="like__count">1700</span>
             </div>
             <p class="pasteboard__header">хочет посетить:</p>
@@ -346,29 +681,31 @@
                 />
               </li>
             </ul>
-            <a href="profile.html">
-              <img
-                class="pasteboard__photo photo photo--circle"
-                src="https://via.placeholder.com/70x70"
-                alt="Марк Смолов"
-                width="70"
-                height="70"
-              />
-            </a>
             <div class="pasteboard__level level level--catalog">
               <span class="level__number level__number--catalog">25</span>
               <span class="level__text level__text--catalog">level</span>
             </div>
-            <a class="pasteboard__button button-rounded" href="respond.html">Позвать!</a>
+            <a class="pasteboard__button button-rounded" href="#">Позвать!</a>
           </li>
           <li class="companions__card pasteboard">
-            <a href="profile.html">
+            <a href="#">
               <h3 class="pasteboard__name name name--onine name--left">
                 Лариса Роговая
               </h3>
             </a>
+            <a href="#">
+              <img
+                class="pasteboard__photo photo photo--circle"
+                src="https://via.placeholder.com/70x70"
+                alt="Лариса Роговая"
+                width="70"
+                height="70"
+              />
+            </a>
             <div class="pasteboard__like like">
-              <button class="like__button" type="button"><span class="visually-hidden">Лайк</span></button>
+              <button class="like__button" type="button">
+                <span class="visually-hidden">Лайк</span>
+              </button>
               <span class="like__count">23</span>
             </div>
             <p class="pasteboard__header">хочет посетить:</p>
@@ -436,33 +773,30 @@
                 />
               </li>
             </ul>
-            <a href="profile.html">
-              <img
-                class="pasteboard__photo photo photo--circle"
-                src="https://via.placeholder.com/70x70"
-                alt="Лариса Роговая"
-                width="70"
-                height="70"
-              />
-            </a>
             <div class="pasteboard__level level level--catalog">
               <span class="level__number level__number--catalog">50</span>
               <span class="level__text level__text--catalog">level</span>
             </div>
-            <a class="pasteboard__button button-rounded" href="respond.html">Позвать!</a>
+            <a class="pasteboard__button button-rounded" href="#">Позвать!</a>
           </li>
         </ul>
         <a
-          class="companions__button text-button text-button--more"
-          href="travelmates.html"
+          class="companions__button text-button text-button--caps text-button--more"
+          href="#"
         >
           Показать еще
         </a>
         <div class="companions__pagination pagination-buttons">
-          <a class="pagination-buttons__item pagination-buttons__item--prev" href="catalog_prev.html">
+          <a
+            class="pagination-buttons__item pagination-buttons__item--prev"
+            href="#"
+          >
             <span class="visually-hidden">Назад</span>
           </a>
-          <a class="pagination-buttons__item pagination-buttons__item--next" href="catalog_next.html">
+          <a
+            class="pagination-buttons__item pagination-buttons__item--next"
+            href="#"
+          >
             <span class="visually-hidden">Вперед</span>
           </a>
         </div>

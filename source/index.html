@@ -22,7 +22,7 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
-              <a href="about.html">О сервисе</a>
+              <a href="#">О сервисе</a>
             </li>
             <li class="site-list__item">
               <a href="form.html">Направления</a>
@@ -31,18 +31,21 @@
               <a href="catalog.html">Попутчики</a>
             </li>
           </ul>
-          <a class="main-nav__button button-rounded button-rounded--big" href="login.html">
+          <a
+            class="main-nav__button button-rounded button-rounded--big"
+            href="#"
+          >
             Авторизация
           </a>
-          <ul class="main-nav__list contacts-list">
-            <li class="contacts-list__item contacts-list__item--phone">
+          <ul class="main-nav__contacts contacts-list">
+            <li class="contacts-list__item contacts-info contacts-info--phone">
               <a href="tel:+88005558628">8 800 555-86-28</a>
             </li>
-            <li class="contacts-list__item contacts-list__item--mail">
+            <li class="contacts-list__item contacts-info contacts-info--mail">
               <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
             </li>
           </ul>
-          <ul class="main-nav__list social-list">
+          <ul class="main-nav__social social-list">
             <li class="social-list__item">
               <a class="social-list__link social-list__link--fb" href="#">
                 <span class="visually-hidden">Фейсбук</span>
@@ -73,12 +76,18 @@
         <b class="intro__slogan">В путешествие с крутыми попутчиками!</b>
         <ul class="intro__buttons-list buttons-list">
           <li class="buttons-list__item">
-            <a class="button-rounded button-rounded--phone" href="tel:+88005558628">
+            <a
+              class="button-rounded button-rounded--phone"
+              href="tel:+88005558628"
+            >
               <span class="visually-hidden">Позвонить</span>
             </a>
           </li>
           <li class="buttons-list__item">
-            <a class="button-rounded button-rounded--mail" href="mailto:mail@htmlacademy.ru">
+            <a
+              class="button-rounded button-rounded--mail"
+              href="mailto:mail@htmlacademy.ru"
+            >
               <span class="visually-hidden">Написать</span>
             </a>
           </li>
@@ -93,10 +102,18 @@
           >
         </blockquote>
         <ol class="intro__features-list features-list">
-          <li class="features-list__item features-list__item--dark-orange">Выберите направление</li>
-          <li class="features-list__item features-list__item--orange">Изучите идеи путешественников</li>
-          <li class="features-list__item features-list__item--light-orange">Находите тех, кто похож на вас</li>
-          <li class="features-list__item features-list__item--yellow">Путешествуйте вместе!</li>
+          <li class="features-list__item features-list__item--dark-orange">
+            Выберите направление
+          </li>
+          <li class="features-list__item features-list__item--orange">
+            Изучите идеи путешественников
+          </li>
+          <li class="features-list__item features-list__item--light-orange">
+            Находите тех, кто похож на вас
+          </li>
+          <li class="features-list__item features-list__item--yellow">
+            Путешествуйте вместе!
+          </li>
         </ol>
       </section>
 
@@ -117,7 +134,7 @@
 
       <section class="countries">
         <h2 class="countries__title title">Направления</h2>
-        <p class="countries__description description">
+        <p class="countries__description description description--dark">
           Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах
           куда хотели бы отправиться и чем можно там заняться.
         </p>
@@ -195,6 +212,13 @@
             <h3 class="traveler__name name name--offline">
               Таня Фирсова
             </h3>
+            <img
+              class="traveler__photo photo"
+              src="https://via.placeholder.com/270x270"
+              alt="Таня Фирсова"
+              width="270"
+              height="270"
+            />
             <ul class="traveler__flags flags">
               <li>
                 <img
@@ -265,13 +289,6 @@
                 />
               </li>
             </ul>
-            <img
-              class="traveler__photo photo"
-              src="https://via.placeholder.com/270x270"
-              alt="Таня Фирсова"
-              width="270"
-              height="270"
-            />
             <div class="traveler__level level">
               <span class="level__number">99</span>
               <span class="level__text">level</span>
@@ -281,6 +298,13 @@
             <h3 class="traveler__name name name--offline">
               Петя Демин
             </h3>
+            <img
+              class="traveler__photo photo"
+              src="https://via.placeholder.com/270x270"
+              alt="Петя Демин"
+              width="270"
+              height="270"
+            />
             <ul class="traveler__flags flags">
               <li>
                 <img
@@ -342,13 +366,6 @@
                 />
               </li>
             </ul>
-            <img
-              class="traveler__photo photo"
-              src="https://via.placeholder.com/270x270"
-              alt="Петя Демин"
-              width="270"
-              height="270"
-            />
             <div class="traveler__level level">
               <span class="level__number">80</span>
               <span class="level__text">level</span>
@@ -367,19 +384,65 @@
         <h2 class="rates__title title title--icon">
           Добавьте свой профиль
         </h2>
-        <img class="rates__icon" src="https://via.placeholder.com/99x99" alt="Иконка тарифов" width="99" height="99">
+        <img
+          class="rates__icon"
+          src="https://via.placeholder.com/99x99"
+          alt="Иконка тарифов"
+          width="99"
+          height="99"
+        />
         <ol class="rates__list ordered-list">
-          <li class="ordered-list__item ordered-list__item--orange">Базовое размещение<br />Бесплатно</li>
+          <li class="ordered-list__item ordered-list__item--orange">
+            Базовое размещение<br />Бесплатно
+          </li>
           <li class="ordered-list__item ordered-list__item--light-orange">
             Вывод на первых позициях<br />99 руб./мес
           </li>
-          <li class="ordered-list__item ordered-list__yellow ordered-list__item--last">
+          <li
+            class="ordered-list__item ordered-list__yellow ordered-list__item--last"
+          >
             Кастомный цвет карточки<br />59 руб./мес
           </li>
         </ol>
-        <a class="rates__button text-button" href="price.html">
+        <a class="rates__button text-button" href="#">
           Показать тарифы для бизнеса
         </a>
+      </section>
+
+      <section class="cta">
+        <h2 class="cta__title title title--center">
+          Заинтересовались?
+        </h2>
+        <p class="cta__description description description--center">
+          Зарегистрируйтесь, это быстро и бесплатно! Уже зарегистрированы? Тогда
+          скорее <a class="cta__link link" href="#">авторизуйтесь</a>.
+        </p>
+        <p class="cta__description description description--center">
+          Остались вопросы? Мы с радостью на них ответим!
+        </p>
+        <form class="cta__form sign" action="https://echo.htmlacademy.ru" method="get">
+          <label class="visually-hidden" for="email">E-mail</label>
+          <input class="sign__input" type="email" name="email" id="email" placeholder="E-mail">
+          <button class="sign__button button-square button-square--triangle" type="submit">
+            <span class="visually-hidden">Регистрация</span>
+          </button>
+        </form>
+        <ul class="cta__contacts contacts-list contacts-list--yellow">
+          <li class="contacts-list__item contacts-list__item--phone">
+            <a href="tel:+88005558628">8 800 555-86-28</a>
+          </li>
+          <li class="contacts-list__item contacts-list__item--mail">
+            <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="map">
+        <header class="map__header">
+          <span class="map__address contacts-info contacts-info--address">ул. Большая Конюшенная, 19/8</span>
+          <button class="map__button button-square button-square--triangle button-square--outline">Проложить маршрут</button>
+        </header>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1573660521544!5m2!1sru!2sru" width="320" height="342" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
       </section>
     </main>
 
