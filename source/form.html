@@ -89,7 +89,9 @@
         </button>
         <form class="info__wrapper">
           <label class="info__header" for="tags">Тэги</label>
-          <textarea class="info__tags tags tags--left" name="tags" id="tags">#бургер #бар #футбол #концерт #крафт</textarea>
+          <textarea class="info__tags tags tags--left" name="tags" id="tags">
+#бургер #бар #футбол #концерт #крафт</textarea
+          >
         </form>
         <form class="info__wrapper">
           <label class="info__header">Транспорт</label>
@@ -203,7 +205,7 @@
           action="https://echo.htmlacademy.ru"
           method="get"
         >
-          <fieldset class="add__dates">
+          <fieldset class="add__dates" id="dates">
             <legend class="add__legend">Шаг 1. Даты пребывания</legend>
             <p class="add__description description description--dark">
               Укажите предпочтительное количество попутчиков, которых вы хотели
@@ -347,11 +349,11 @@
                 </tbody>
               </table>
             </div>
-            <button class="add__button button-rounded" type="button">
+            <a class="add__button button-rounded" href="#route">
               Следующий шаг
-            </button>
+            </a>
           </fieldset>
-          <fieldset class="add__route">
+          <fieldset class="add__route" id="route">
             <legend class="add__legend">Шаг 2. Маршрут</legend>
             <p class="add__description description description--dark">
               Укажите предпочтительное количество попутчиков, которых вы хотели
@@ -360,14 +362,14 @@
             <div class="add__country">
               <input
                 class="add__name"
-                type="text"
+                type="hidden"
                 name="country-1"
                 id="country-1"
                 value="Босния и Герцеговина"
               />
-              <label class="visually-hidden" for="country-1"
-                >Название страны</label
-              >
+              <label class="add__label" for="country-1">
+                Босния и Герцеговина
+              </label>
               <span class="add__flag add__flag--bosnia"></span>
               <button class="add__delete">
                 <span class="visually-hidden">Удалить</span>
@@ -376,14 +378,14 @@
             <div class="add__country">
               <input
                 class="add__name"
-                type="text"
+                type="hidden"
                 name="country-2"
                 id="country-2"
                 value="Чехия"
               />
-              <label class="visually-hidden" for="country-2"
-                >Название страны</label
-              >
+              <label class="add__label" for="country-2">
+                Чехия
+              </label>
               <span class="add__flag add__flag--czech"></span>
               <button class="add__delete">
                 <span class="visually-hidden">Удалить</span>
@@ -391,83 +393,99 @@
             </div>
             <div class="add__country">
               <input
-                class="add__name add__name--choose"
-                type="text"
+                class="add__name"
+                type="hidden"
                 name="country-3"
                 id="country-3"
                 value="Выберите страну"
               />
-              <label class="visually-hidden" for="country-3"
-                >Название страны</label
+              <label class="add__label add__label--choose" for="country-3"
+                >Выберите страну</label
               >
               <button class="add__delete">
                 <span class="visually-hidden">Удалить</span>
               </button>
               <div class="add__dropdown">
-                <table class="add____letters letters">
+                <table class="add__letters letters">
                   <tbody>
                     <tr>
-                      <td class="letters__item letters__item--active">А</td>
-                      <td class="letters__item">Б</td>
-                      <td class="letters__item">В</td>
-                      <td class="letters__item">Г</td>
-                      <td class="letters__item">Д</td>
+                      <td class="letters__item letters__item--active"><a>А</a></td>
+                      <td class="letters__item"><a href="#">Б</a></td>
+                      <td class="letters__item"><a href="#">В</a></td>
+                      <td class="letters__item"><a href="#">Г</a></td>
+                      <td class="letters__item"><a href="#">Д</a></td>
                     </tr>
                     <tr>
-                      <td class="letters__item">Е</td>
-                      <td class="letters__item">З</td>
-                      <td class="letters__item">И</td>
-                      <td class="letters__item">К</td>
-                      <td class="letters__item">Л</td>
+                      <td class="letters__item"><a href="#">Е</a></td>
+                      <td class="letters__item"><a href="#">З</a></td>
+                      <td class="letters__item"><a href="#">И</a></td>
+                      <td class="letters__item"><a href="#">К</a></td>
+                      <td class="letters__item"><a href="#">Л</a></td>
                     </tr>
                     <tr>
-                      <td class="letters__item">М</td>
-                      <td class="letters__item">Н</td>
-                      <td class="letters__item">О</td>
-                      <td class="letters__item">П</td>
-                      <td class="letters__item">Р</td>
+                      <td class="letters__item"><a href="#">М</a></td>
+                      <td class="letters__item"><a href="#">Н</a></td>
+                      <td class="letters__item"><a href="#">О</a></td>
+                      <td class="letters__item"><a href="#">П</a></td>
+                      <td class="letters__item"><a href="#">Р</a></td>
                     </tr>
                     <tr>
-                      <td class="letters__item">С</td>
-                      <td class="letters__item">Т</td>
-                      <td class="letters__item">У</td>
-                      <td class="letters__item">Ф</td>
-                      <td class="letters__item">Х</td>
+                      <td class="letters__item"><a href="#">С</a></td>
+                      <td class="letters__item"><a href="#">Т</a></td>
+                      <td class="letters__item"><a href="#">У</a></td>
+                      <td class="letters__item"><a href="#">Ф</a></td>
+                      <td class="letters__item"><a href="#">Х</a></td>
                     </tr>
                     <tr>
-                      <td class="letters__item">Ч</td>
-                      <td class="letters__item">Ш</td>
-                      <td class="letters__item">Э</td>
-                      <td class="letters__item">Ю</td>
-                      <td class="letters__item">Я</td>
+                      <td class="letters__item"><a href="#">Ч</a></td>
+                      <td class="letters__item"><a href="#">Ш</a></td>
+                      <td class="letters__item"><a href="#">Э</a></td>
+                      <td class="letters__item"><a href="#">Ю</a></td>
+                      <td class="letters__item"><a href="#">Я</a></td>
                     </tr>
                   </tbody>
                 </table>
                 <ul class="add__countries countries-list">
-                  <li class="countries-list__country">Афганистан</li>
-                  <li class="countries-list__country">Албания</li>
-                  <li class="countries-list__country">Алжир</li>
-                  <li class="countries-list__country">Андорра</li>
-                  <li class="countries-list__country">Аргентина</li>
-                  <li class="countries-list__country">Армения</li>
-                  <li class="countries-list__country">Австралия</li>
-                  <li class="countries-list__country">Австрия</li>
-                  <li class="countries-list__country">Азербайджан</li>
+                  <li class="countries-list__country">
+                    <a href="#">Афганистан</a>
+                  </li>
+                  <li class="countries-list__country">
+                    <a href="#">Албания</a>
+                  </li>
+                  <li class="countries-list__country"><a href="#">Алжир</a></li>
+                  <li class="countries-list__country">
+                    <a href="#">Андорра</a>
+                  </li>
+                  <li class="countries-list__country">
+                    <a href="#">Аргентина</a>
+                  </li>
+                  <li class="countries-list__country">
+                    <a href="#">Армения</a>
+                  </li>
+                  <li class="countries-list__country">
+                    <a href="#">Австралия</a>
+                  </li>
+                  <li class="countries-list__country">
+                    <a href="#">Австрия</a>
+                  </li>
+                  <li class="countries-list__country">
+                    <a href="#">Азербайджан</a>
+                  </li>
                 </ul>
               </div>
             </div>
             <button class="add__new" type="button">Добавить страну</button>
-            <button class="add__button button-rounded" type="button">
+            <a class="add__button button-rounded" href="#entertainment">
               Следующий шаг
-            </button>
-            <button
+            </a>
+            <a
               class="add__text-button text-button text-button--caps"
-              type="button"
+              href="#dates"
             >
               На шаг назад
-            </button>
+            </a>
           </fieldset>
-          <fieldset class="add__entertainment">
+          <fieldset class="add__entertainment" id="entertainment">
             <legend class="add__legend">Шаг 3. Развлечения</legend>
             <p class="add__description description description--dark">
               Наконец, расскажите о своих планах времяпровождения. Можно писать
@@ -506,12 +524,12 @@
             <button class="add__button button-rounded" type="submit">
               Отправить
             </button>
-            <button
+            <a
               class="add__text-button text-button text-button--caps"
-              type="button"
+              href="#route"
             >
               На шаг назад
-            </button>
+            </a>
           </fieldset>
         </form>
       </section>
