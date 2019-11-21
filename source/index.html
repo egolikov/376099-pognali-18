@@ -3,13 +3,14 @@
   <head>
     <meta charset="utf-8" />
     <title>HTML Academy: Погнали</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
       <a class="page-header__logo">
         <img
           class="page-header__logo-image"
-          src="https://via.placeholder.com/100x19"
+          src="img/logo-mobile-white@1x.png"
           width="100"
           height="19"
           alt="Погнали"
@@ -21,14 +22,14 @@
         </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a href="#">О сервисе</a>
+            <li>
+              <a class="site-list__item" href="#">О сервисе</a>
             </li>
-            <li class="site-list__item">
-              <a href="form.html">Направления</a>
+            <li>
+              <a class="site-list__item" href="form.html">Направления</a>
             </li>
-            <li class="site-list__item">
-              <a href="catalog.html">Попутчики</a>
+            <li>
+              <a class="site-list__item" href="catalog.html">Попутчики</a>
             </li>
           </ul>
           <a
@@ -37,12 +38,12 @@
           >
             Авторизация
           </a>
-          <ul class="main-nav__contacts contacts-list">
-            <li class="contacts-list__item contacts-info contacts-info--phone">
-              <a href="tel:+88005558628">8 800 555-86-28</a>
+          <ul class="main-nav__contacts">
+            <li>
+              <a class="main-nav__contact contacts-info contacts-info--phone" href="tel:+88005558628">8 800 555-86-28</a>
             </li>
-            <li class="contacts-list__item contacts-info contacts-info--mail">
-              <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            <li>
+              <a class="main-nav__contact contacts-info contacts-info--mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
             </li>
           </ul>
           <ul class="main-nav__social social-list">
@@ -95,9 +96,9 @@
             <button class="button-rounded" type="button">Авторизация</button>
           </li>
         </ul>
-        <blockquote class="intro__quote quote">
-          <p class="quote__text">«Лучшее приложение, что я видел в жизни!»</p>
-          <cite class="quote__source"
+        <blockquote class="intro__quote">
+          <p class="intro__description description">«Лучшее приложение, что я видел в жизни!»</p>
+          <cite class="intro__bold bold"
             >Мурат Эльтазин главный редактор газеты «гаджетлайф»</cite
           >
         </blockquote>
@@ -149,7 +150,7 @@
             </div>
             <img
               class="country-card__photo"
-              src="https://via.placeholder.com/270x110"
+              src="img/thailand-mobile@1x.jpg"
               alt="Таиланд"
               width="270"
               height="110"
@@ -165,7 +166,7 @@
             </div>
             <img
               class="country-card__photo"
-              src="https://via.placeholder.com/270x110"
+              src="img/france-mobile@1x.jpg"
               alt="Франция"
               width="270"
               height="110"
@@ -181,7 +182,7 @@
             </div>
             <img
               class="country-card__photo"
-              src="https://via.placeholder.com/270x110"
+              src="img/czech-mobile@1x.jpg"
               alt="Чехия"
               width="270"
               height="110"
@@ -214,7 +215,7 @@
             </h3>
             <img
               class="traveler__photo photo"
-              src="https://via.placeholder.com/270x270"
+              src="img/firsova-desktop@1x.jpg"
               alt="Таня Фирсова"
               width="270"
               height="270"
@@ -386,7 +387,7 @@
         </h2>
         <img
           class="rates__icon"
-          src="https://via.placeholder.com/99x99"
+          src="img/rates@1x.png"
           alt="Иконка тарифов"
           width="99"
           height="99"
@@ -427,12 +428,12 @@
             <span class="visually-hidden">Регистрация</span>
           </button>
         </form>
-        <ul class="cta__contacts contacts-list contacts-list--yellow">
-          <li class="contacts-list__item contacts-list__item--phone">
-            <a href="tel:+88005558628">8 800 555-86-28</a>
+        <ul class="cta__contacts">
+          <li>
+            <a class="cta__contact contacts-info contacts-info--phone contacts-info--yellow" href="tel:+88005558628">8 800 555-86-28</a>
           </li>
-          <li class="contacts-list__item contacts-list__item--mail">
-            <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          <li>
+            <a class="cta__contact contacts-info contacts-info--mail contacts-info--yellow" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
           </li>
         </ul>
       </section>
@@ -450,9 +451,9 @@
       <a class="page-footer__logo">
         <img
           class="page-footer__logo-image"
-          src="https://via.placeholder.com/96x15"
-          width="96"
-          height="15"
+          src="img/logo-mobile-blue@1x.png"
+          width="100"
+          height="19"
           alt="Погнали"
         />
       </a>

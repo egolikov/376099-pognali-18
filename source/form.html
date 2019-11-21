@@ -3,13 +3,14 @@
   <head>
     <meta charset="utf-8" />
     <title>HTML Academy: Погнали</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
       <a class="page-header__logo" href="index.html">
         <img
           class="page-header__logo-image"
-          src="https://via.placeholder.com/100x19"
+          src="img/logo-mobile-white@1x.png"
           width="100"
           height="19"
           alt="Погнали"
@@ -21,28 +22,31 @@
         </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a href="#">О сервисе</a>
+            <li>
+              <a class="site-list__item" href="#">О сервисе</a>
             </li>
-            <li class="site-list__item">
-              <a href="form.html">Направления</a>
+            <li>
+              <a class="site-list__item" href="form.html">Направления</a>
             </li>
-            <li class="site-list__item">
-              <a href="catalog.html">Попутчики</a>
+            <li>
+              <a class="site-list__item" href="catalog.html">Попутчики</a>
             </li>
           </ul>
-          <button class="main-nav__button button-rounded button-rounded--big">
+          <a
+            class="main-nav__button button-rounded button-rounded--big"
+            href="#"
+          >
             Авторизация
-          </button>
-          <ul class="main-nav__list contacts-list">
-            <li class="contacts-list__item contacts-list__item--phone">
-              <a href="tel:+88005558628">8 800 555-86-28</a>
+          </a>
+          <ul class="main-nav__contacts">
+            <li>
+              <a class="main-nav__contact contacts-info contacts-info--phone" href="tel:+88005558628">8 800 555-86-28</a>
             </li>
-            <li class="contacts-list__item contacts-list__item--mail">
-              <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            <li>
+              <a class="main-nav__contact contacts-info contacts-info--mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
             </li>
           </ul>
-          <ul class="main-nav__list social-list">
+          <ul class="main-nav__social social-list">
             <li class="social-list__item">
               <a class="social-list__link social-list__link--fb" href="#">
                 <span class="visually-hidden">Фейсбук</span>
@@ -267,9 +271,9 @@
             >
             <div class="add__calendar calendar">
               <div class="calendar__month">
-                <button class="calendar__prev"></button>
+                <button class="calendar__prev"><span class="visually-hidden">Назад</span></button>
                 <span class="calendar__name">Март 2019</span>
-                <button class="calendar__next"></button>
+                <button class="calendar__next"><span class="visually-hidden">Вперёд</span></button>
               </div>
               <table class="calendar__days">
                 <thead>
@@ -536,12 +540,12 @@
     </main>
 
     <footer class="page-footer">
-      <a class="page-footer__logo">
+      <a class="page-footer__logo" href="index.html">
         <img
           class="page-footer__logo-image"
-          src="https://via.placeholder.com/96x15"
-          width="96"
-          height="15"
+          src="img/logo-mobile-blue@1x.png"
+          width="100"
+          height="19"
           alt="Погнали"
         />
       </a>
