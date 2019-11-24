@@ -1,4 +1,8 @@
 .filter-country {
+  margin-bottom: 24px;
+  padding-top: 20px;
+  padding-bottom: 27px;
+
   background-color: #e2e5f2;
 }
 
@@ -8,4 +12,23 @@
   font-weight: 700;
   text-transform: uppercase;
   color: #192144;
+}
+
+.filter-country__parts {
+  list-style: none;
+}
+
+.filter-country__part {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #192144;
+
+  opacity: 0.3;
+
+  &--active {
+    opacity: 1;
+  }
 }

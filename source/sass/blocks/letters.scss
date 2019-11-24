@@ -1,1 +1,19 @@
-//Алфавит
+.letters__item {
+  background-color: #ffffff;
+
+  &--active {
+    background-color: #1d2e5b;
+  }
+}
+
+.letters__link {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #1d2e5b;
+
+  &--active {
+    color: #ffffff;
+  }
+}
