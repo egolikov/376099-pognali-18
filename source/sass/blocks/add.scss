@@ -1,1 +1,51 @@
-//Добавить план
+.add__legend {
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #1d2e5b;
+}
+
+.add__label-checkbox {
+  font-size: 15px;
+  line-height: 15px;
+  font-weight: 400;
+  color: #444444;
+}
+
+.add__label {
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 1.4px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #1d2e5b;
+}
+
+.add__new {
+  font-family: "Blogger Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 1.4px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #1d2e5b;
+}
+
+.add__label-area {
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 500;
+  color: #1d2e5b;
+}
+
+.add__text {
+  font-family: "Blogger Sans", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #444444;
+
+  &::placeholder {
+    opacity: 0.3;
+  }
+}

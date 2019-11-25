@@ -4,6 +4,10 @@
   &--catalog {
     background-color: transparent;
   }
+
+  &--big {
+    background-color: transparent;
+  }
 }
 
 .level__number {
@@ -16,6 +20,12 @@
     line-height: 18px;
     color: #1d2e5b;
   }
+
+  &--big {
+    font-size: 38px;
+    line-height: 38px;
+    color: #161c35;
+  }
 }
 
 .level__text {
@@ -23,4 +33,10 @@
   line-height: 14px;
   font-weight: 400px;
   color: #ffffff;
+
+  &--big {
+    font-size: 18px;
+    line-height: 22px;
+    color: #444444;
+  }
 }

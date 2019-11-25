@@ -80,8 +80,8 @@
         </div>
         <img
           class="info__photo photo photo--circle photo--info"
-          src="https://via.placeholder.com/100x100"
-          alt="Таня Фирсова"
+          src="img/photo-account-mobile@1x.jpg"
+          alt="Петя Демин"
           width="100"
           height="100"
         />
@@ -180,7 +180,7 @@
       </section>
 
       <section class="plans">
-        <h2 class="plans__title title title-blue">Мои планы</h2>
+        <h2 class="plans__title title title--blue">Мои планы</h2>
         <ol class="plans__list">
           <li class="plans__item plan">
             <h3 class="plan__header">Франция, Италия</h3>
@@ -198,7 +198,7 @@
       </section>
 
       <section class="add">
-        <h2 class="add__title title title-blue">Добавить план:</h2>
+        <h2 class="add__title title title--blue">Добавить план:</h2>
         <ul class="add__pagination">
           <li class="add__dot add__dot--current"></li>
           <li class="add__dot"></li>
@@ -229,6 +229,7 @@
                 type="number"
                 name="people"
                 id="people"
+                value="2"
               />
               <button
                 class="counter__button counter__button--minus"
@@ -251,6 +252,7 @@
                 type="number"
                 name="days"
                 id="days"
+                value="2"
               />
               <button
                 class="counter__button counter__button--minus"
@@ -371,9 +373,9 @@
                 id="country-1"
                 value="Босния и Герцеговина"
               />
-              <label class="add__label" for="country-1">
+              <span class="add__label">
                 Босния и Герцеговина
-              </label>
+              </span>
               <span class="add__flag add__flag--bosnia"></span>
               <button class="add__delete">
                 <span class="visually-hidden">Удалить</span>
@@ -387,9 +389,9 @@
                 id="country-2"
                 value="Чехия"
               />
-              <label class="add__label" for="country-2">
+              <span class="add__label">
                 Чехия
-              </label>
+              </span>
               <span class="add__flag add__flag--czech"></span>
               <button class="add__delete">
                 <span class="visually-hidden">Удалить</span>
@@ -403,9 +405,9 @@
                 id="country-3"
                 value="Выберите страну"
               />
-              <label class="add__label add__label--choose" for="country-3"
-                >Выберите страну</label
-              >
+              <span class="add__label add__label--choose">
+                Выберите страну
+              </span>
               <button class="add__delete">
                 <span class="visually-hidden">Удалить</span>
               </button>
@@ -413,39 +415,39 @@
                 <table class="add__letters letters">
                   <tbody>
                     <tr>
-                      <td class="letters__item letters__item--active"><a>А</a></td>
-                      <td class="letters__item"><a href="#">Б</a></td>
-                      <td class="letters__item"><a href="#">В</a></td>
-                      <td class="letters__item"><a href="#">Г</a></td>
-                      <td class="letters__item"><a href="#">Д</a></td>
+                      <td class="letters__item letters__item--active"><a class="letters__link letters__link--active">А</a></td>
+                      <td class="letters__item"><a class="letters__link" href="#">Б</a></td>
+                      <td class="letters__item"><a class="letters__link" href="#">В</a></td>
+                      <td class="letters__item"><a class="letters__link" href="#">Г</a></td>
+                      <td class="letters__item"><a class="letters__link" href="#">Д</a></td>
                     </tr>
                     <tr>
-                      <td class="letters__item"><a href="#">Е</a></td>
-                      <td class="letters__item"><a href="#">З</a></td>
-                      <td class="letters__item"><a href="#">И</a></td>
-                      <td class="letters__item"><a href="#">К</a></td>
-                      <td class="letters__item"><a href="#">Л</a></td>
+                      <td class="letters__item"><a class="letters__link" href="#">Е</a></td>
+                      <td class="letters__item"><a class="letters__link" href="#">З</a></td>
+                      <td class="letters__item"><a class="letters__link" href="#">И</a></td>
+                      <td class="letters__item"><a class="letters__link" href="#">К</a></td>
+                      <td class="letters__item"><a class="letters__link" href="#">Л</a></td>
                     </tr>
                     <tr>
-                      <td class="letters__item"><a href="#">М</a></td>
-                      <td class="letters__item"><a href="#">Н</a></td>
-                      <td class="letters__item"><a href="#">О</a></td>
-                      <td class="letters__item"><a href="#">П</a></td>
-                      <td class="letters__item"><a href="#">Р</a></td>
+                      <td class="letters__item"><a class="letters__link" href="#">М</a></td>
+                      <td class="letters__item"><a class="letters__link" href="#">Н</a></td>
+                      <td class="letters__item"><a class="letters__link" href="#">О</a></td>
+                      <td class="letters__item"><a class="letters__link" href="#">П</a></td>
+                      <td class="letters__item"><a class="letters__link" href="#">Р</a></td>
                     </tr>
                     <tr>
-                      <td class="letters__item"><a href="#">С</a></td>
-                      <td class="letters__item"><a href="#">Т</a></td>
-                      <td class="letters__item"><a href="#">У</a></td>
-                      <td class="letters__item"><a href="#">Ф</a></td>
-                      <td class="letters__item"><a href="#">Х</a></td>
+                      <td class="letters__item"><a class="letters__link" href="#">С</a></td>
+                      <td class="letters__item"><a class="letters__link" href="#">Т</a></td>
+                      <td class="letters__item"><a class="letters__link" href="#">У</a></td>
+                      <td class="letters__item"><a class="letters__link" href="#">Ф</a></td>
+                      <td class="letters__item"><a class="letters__link" href="#">Х</a></td>
                     </tr>
                     <tr>
-                      <td class="letters__item"><a href="#">Ч</a></td>
-                      <td class="letters__item"><a href="#">Ш</a></td>
-                      <td class="letters__item"><a href="#">Э</a></td>
-                      <td class="letters__item"><a href="#">Ю</a></td>
-                      <td class="letters__item"><a href="#">Я</a></td>
+                      <td class="letters__item"><a class="letters__link" href="#">Ч</a></td>
+                      <td class="letters__item"><a class="letters__link" href="#">Ш</a></td>
+                      <td class="letters__item"><a class="letters__link" href="#">Э</a></td>
+                      <td class="letters__item"><a class="letters__link" href="#">Ю</a></td>
+                      <td class="letters__item"><a class="letters__link" href="#">Я</a></td>
                     </tr>
                   </tbody>
                 </table>
@@ -491,9 +493,7 @@
           </fieldset>
           <fieldset class="add__entertainment" id="entertainment">
             <legend class="add__legend">Шаг 3. Развлечения</legend>
-            <p class="add__description description description--dark">
-              Наконец, расскажите о своих планах времяпровождения. Можно писать
-              в свободной форме и ставить тэги.
+            <p class="add__description description description--dark">Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и ставить тэги.
             </p>
             <label
               class="add__label-area add__label-area--bosnia"
@@ -522,8 +522,7 @@
               cols="30"
               rows="10"
               placeholder="План действий"
-            >
-              Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.
+            >Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.
             </textarea>
             <button class="add__button button-rounded" type="submit">
               Отправить

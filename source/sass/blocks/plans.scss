@@ -1,1 +1,25 @@
-//План поездки
+.plan__header {
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 700;
+  color: #1d2e5b;
+}
+
+.plan__text {
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #1d2e5b;
+}
+
+.plan__link {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000000;
+
+  opacity: 0.3;
+}

@@ -1,1 +1,39 @@
-//Календарь
+.calendar__name {
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #1d2e5b;
+}
+
+.calendar__weekdays {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #444444;
+
+  &--weekend {
+    color: #ff5c23;
+  }
+}
+
+.calendar__day {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+
+  &--disabled {
+    color: #444444;
+
+    opacity: 0.3;
+  }
+
+  &--active {
+    color: #ffffff;
+
+    background-color: #1d2e5b;
+  }
+
+  &--current {
+    border: 2px solid #ff5c23;
+  }
+}
