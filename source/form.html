@@ -3,13 +3,14 @@
   <head>
     <meta charset="utf-8" />
     <title>HTML Academy: Погнали</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
       <a class="page-header__logo" href="index.html">
         <img
           class="page-header__logo-image"
-          src="https://via.placeholder.com/100x19"
+          src="img/logo-mobile-white@1x.png"
           width="100"
           height="19"
           alt="Погнали"
@@ -21,28 +22,31 @@
         </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a href="#">О сервисе</a>
+            <li>
+              <a class="site-list__item" href="#">О сервисе</a>
             </li>
-            <li class="site-list__item">
-              <a href="form.html">Направления</a>
+            <li>
+              <a class="site-list__item" href="form.html">Направления</a>
             </li>
-            <li class="site-list__item">
-              <a href="catalog.html">Попутчики</a>
+            <li>
+              <a class="site-list__item" href="catalog.html">Попутчики</a>
             </li>
           </ul>
-          <button class="main-nav__button button-rounded button-rounded--big">
+          <a
+            class="main-nav__button button-rounded button-rounded--big"
+            href="#"
+          >
             Авторизация
-          </button>
-          <ul class="main-nav__list contacts-list">
-            <li class="contacts-list__item contacts-list__item--phone">
-              <a href="tel:+88005558628">8 800 555-86-28</a>
+          </a>
+          <ul class="main-nav__contacts">
+            <li>
+              <a class="main-nav__contact contacts-info contacts-info--phone" href="tel:+88005558628">8 800 555-86-28</a>
             </li>
-            <li class="contacts-list__item contacts-list__item--mail">
-              <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            <li>
+              <a class="main-nav__contact contacts-info contacts-info--mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
             </li>
           </ul>
-          <ul class="main-nav__list social-list">
+          <ul class="main-nav__social social-list">
             <li class="social-list__item">
               <a class="social-list__link social-list__link--fb" href="#">
                 <span class="visually-hidden">Фейсбук</span>
@@ -76,8 +80,8 @@
         </div>
         <img
           class="info__photo photo photo--circle photo--info"
-          src="https://via.placeholder.com/100x100"
-          alt="Таня Фирсова"
+          src="img/photo-account-mobile@1x.jpg"
+          alt="Петя Демин"
           width="100"
           height="100"
         />
@@ -176,7 +180,7 @@
       </section>
 
       <section class="plans">
-        <h2 class="plans__title title title-blue">Мои планы</h2>
+        <h2 class="plans__title title title--blue">Мои планы</h2>
         <ol class="plans__list">
           <li class="plans__item plan">
             <h3 class="plan__header">Франция, Италия</h3>
@@ -194,7 +198,7 @@
       </section>
 
       <section class="add">
-        <h2 class="add__title title title-blue">Добавить план:</h2>
+        <h2 class="add__title title title--blue">Добавить план:</h2>
         <ul class="add__pagination">
           <li class="add__dot add__dot--current"></li>
           <li class="add__dot"></li>
@@ -225,6 +229,7 @@
                 type="number"
                 name="people"
                 id="people"
+                value="2"
               />
               <button
                 class="counter__button counter__button--minus"
@@ -247,6 +252,7 @@
                 type="number"
                 name="days"
                 id="days"
+                value="2"
               />
               <button
                 class="counter__button counter__button--minus"
@@ -267,9 +273,9 @@
             >
             <div class="add__calendar calendar">
               <div class="calendar__month">
-                <button class="calendar__prev"></button>
+                <button class="calendar__prev"><span class="visually-hidden">Назад</span></button>
                 <span class="calendar__name">Март 2019</span>
-                <button class="calendar__next"></button>
+                <button class="calendar__next"><span class="visually-hidden">Вперёд</span></button>
               </div>
               <table class="calendar__days">
                 <thead>
@@ -367,9 +373,9 @@
                 id="country-1"
                 value="Босния и Герцеговина"
               />
-              <label class="add__label" for="country-1">
+              <span class="add__label">
                 Босния и Герцеговина
-              </label>
+              </span>
               <span class="add__flag add__flag--bosnia"></span>
               <button class="add__delete">
                 <span class="visually-hidden">Удалить</span>
@@ -383,9 +389,9 @@
                 id="country-2"
                 value="Чехия"
               />
-              <label class="add__label" for="country-2">
+              <span class="add__label">
                 Чехия
-              </label>
+              </span>
               <span class="add__flag add__flag--czech"></span>
               <button class="add__delete">
                 <span class="visually-hidden">Удалить</span>
@@ -399,9 +405,9 @@
                 id="country-3"
                 value="Выберите страну"
               />
-              <label class="add__label add__label--choose" for="country-3"
-                >Выберите страну</label
-              >
+              <span class="add__label add__label--choose">
+                Выберите страну
+              </span>
               <button class="add__delete">
                 <span class="visually-hidden">Удалить</span>
               </button>
@@ -409,39 +415,39 @@
                 <table class="add__letters letters">
                   <tbody>
                     <tr>
-                      <td class="letters__item letters__item--active"><a>А</a></td>
-                      <td class="letters__item"><a href="#">Б</a></td>
-                      <td class="letters__item"><a href="#">В</a></td>
-                      <td class="letters__item"><a href="#">Г</a></td>
-                      <td class="letters__item"><a href="#">Д</a></td>
+                      <td class="letters__item letters__item--active"><a class="letters__link letters__link--active">А</a></td>
+                      <td class="letters__item"><a class="letters__link" href="#">Б</a></td>
+                      <td class="letters__item"><a class="letters__link" href="#">В</a></td>
+                      <td class="letters__item"><a class="letters__link" href="#">Г</a></td>
+                      <td class="letters__item"><a class="letters__link" href="#">Д</a></td>
                     </tr>
                     <tr>
-                      <td class="letters__item"><a href="#">Е</a></td>
-                      <td class="letters__item"><a href="#">З</a></td>
-                      <td class="letters__item"><a href="#">И</a></td>
-                      <td class="letters__item"><a href="#">К</a></td>
-                      <td class="letters__item"><a href="#">Л</a></td>
+                      <td class="letters__item"><a class="letters__link" href="#">Е</a></td>
+                      <td class="letters__item"><a class="letters__link" href="#">З</a></td>
+                      <td class="letters__item"><a class="letters__link" href="#">И</a></td>
+                      <td class="letters__item"><a class="letters__link" href="#">К</a></td>
+                      <td class="letters__item"><a class="letters__link" href="#">Л</a></td>
                     </tr>
                     <tr>
-                      <td class="letters__item"><a href="#">М</a></td>
-                      <td class="letters__item"><a href="#">Н</a></td>
-                      <td class="letters__item"><a href="#">О</a></td>
-                      <td class="letters__item"><a href="#">П</a></td>
-                      <td class="letters__item"><a href="#">Р</a></td>
+                      <td class="letters__item"><a class="letters__link" href="#">М</a></td>
+                      <td class="letters__item"><a class="letters__link" href="#">Н</a></td>
+                      <td class="letters__item"><a class="letters__link" href="#">О</a></td>
+                      <td class="letters__item"><a class="letters__link" href="#">П</a></td>
+                      <td class="letters__item"><a class="letters__link" href="#">Р</a></td>
                     </tr>
                     <tr>
-                      <td class="letters__item"><a href="#">С</a></td>
-                      <td class="letters__item"><a href="#">Т</a></td>
-                      <td class="letters__item"><a href="#">У</a></td>
-                      <td class="letters__item"><a href="#">Ф</a></td>
-                      <td class="letters__item"><a href="#">Х</a></td>
+                      <td class="letters__item"><a class="letters__link" href="#">С</a></td>
+                      <td class="letters__item"><a class="letters__link" href="#">Т</a></td>
+                      <td class="letters__item"><a class="letters__link" href="#">У</a></td>
+                      <td class="letters__item"><a class="letters__link" href="#">Ф</a></td>
+                      <td class="letters__item"><a class="letters__link" href="#">Х</a></td>
                     </tr>
                     <tr>
-                      <td class="letters__item"><a href="#">Ч</a></td>
-                      <td class="letters__item"><a href="#">Ш</a></td>
-                      <td class="letters__item"><a href="#">Э</a></td>
-                      <td class="letters__item"><a href="#">Ю</a></td>
-                      <td class="letters__item"><a href="#">Я</a></td>
+                      <td class="letters__item"><a class="letters__link" href="#">Ч</a></td>
+                      <td class="letters__item"><a class="letters__link" href="#">Ш</a></td>
+                      <td class="letters__item"><a class="letters__link" href="#">Э</a></td>
+                      <td class="letters__item"><a class="letters__link" href="#">Ю</a></td>
+                      <td class="letters__item"><a class="letters__link" href="#">Я</a></td>
                     </tr>
                   </tbody>
                 </table>
@@ -487,9 +493,7 @@
           </fieldset>
           <fieldset class="add__entertainment" id="entertainment">
             <legend class="add__legend">Шаг 3. Развлечения</legend>
-            <p class="add__description description description--dark">
-              Наконец, расскажите о своих планах времяпровождения. Можно писать
-              в свободной форме и ставить тэги.
+            <p class="add__description description description--dark">Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и ставить тэги.
             </p>
             <label
               class="add__label-area add__label-area--bosnia"
@@ -518,8 +522,7 @@
               cols="30"
               rows="10"
               placeholder="План действий"
-            >
-              Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.
+            >Пить пиво и лазить по старым замкам, наслаждаться архитектурой и вот это все.
             </textarea>
             <button class="add__button button-rounded" type="submit">
               Отправить
@@ -536,12 +539,12 @@
     </main>
 
     <footer class="page-footer">
-      <a class="page-footer__logo">
+      <a class="page-footer__logo" href="index.html">
         <img
           class="page-footer__logo-image"
-          src="https://via.placeholder.com/96x15"
-          width="96"
-          height="15"
+          src="img/logo-mobile-blue@1x.png"
+          width="100"
+          height="19"
           alt="Погнали"
         />
       </a>

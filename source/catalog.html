@@ -3,13 +3,14 @@
   <head>
     <meta charset="utf-8" />
     <title>HTML Academy: Погнали</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
       <a class="page-header__logo" href="index.html">
         <img
           class="page-header__logo-image"
-          src="https://via.placeholder.com/100x19"
+          src="img/logo-mobile-white@1x.png"
           width="100"
           height="19"
           alt="Погнали"
@@ -21,28 +22,31 @@
         </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a href="#">О сервисе</a>
+            <li>
+              <a class="site-list__item" href="#">О сервисе</a>
             </li>
-            <li class="site-list__item">
-              <a href="form.html">Направления</a>
+            <li>
+              <a class="site-list__item" href="form.html">Направления</a>
             </li>
-            <li class="site-list__item">
-              <a href="catalog.html">Попутчики</a>
+            <li>
+              <a class="site-list__item" href="catalog.html">Попутчики</a>
             </li>
           </ul>
-          <button class="main-nav__button button-rounded button-rounded--big">
+          <a
+            class="main-nav__button button-rounded button-rounded--big"
+            href="#"
+          >
             Авторизация
-          </button>
-          <ul class="main-nav__list contacts-list">
-            <li class="contacts-list__item contacts-list__item--phone">
-              <a href="tel:+88005558628">8 800 555-86-28</a>
+          </a>
+          <ul class="main-nav__contacts">
+            <li>
+              <a class="main-nav__contact contacts-info contacts-info--phone" href="tel:+88005558628">8 800 555-86-28</a>
             </li>
-            <li class="contacts-list__item contacts-list__item--mail">
-              <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            <li>
+              <a class="main-nav__contact contacts-info contacts-info--mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
             </li>
           </ul>
-          <ul class="main-nav__list social-list">
+          <ul class="main-nav__social social-list">
             <li class="social-list__item">
               <a class="social-list__link social-list__link--fb" href="#">
                 <span class="visually-hidden">Фейсбук</span>
@@ -75,79 +79,79 @@
         </button>
         <div class="filter-country__wrapper">
           <ul class="filter-country__parts">
-            <li class="filter-country__part filter-country__part--active">
-              <a>Европа</a>
+            <li>
+              <a class="filter-country__part filter-country__part--active">Европа</a>
             </li>
-            <li class="filter-country__part"><a href="#">Азия</a></li>
-            <li class="filter-country__part"><a href="#">Америка</a></li>
-            <li class="filter-country__part"><a href="#">Острова</a></li>
+            <li><a class="filter-country__part" href="#">Азия</a></li>
+            <li><a class="filter-country__part" href="#">Америка</a></li>
+            <li><a class="filter-country__part" href="#">Острова</a></li>
           </ul>
           <table class="filter-country__letters letters">
             <tbody>
               <tr>
-                <td class="letters__item letters__item--active"><a>А</a></td>
-                <td class="letters__item"><a href="#">Б</a></td>
-                <td class="letters__item"><a href="#">В</a></td>
-                <td class="letters__item"><a href="#">Г</a></td>
-                <td class="letters__item"><a href="#">Д</a></td>
+                <td class="letters__item letters__item--active"><a class="letters__link letters__link--active">А</a></td>
+                <td class="letters__item"><a class="letters__link" href="#">Б</a></td>
+                <td class="letters__item"><a class="letters__link" href="#">В</a></td>
+                <td class="letters__item"><a class="letters__link" href="#">Г</a></td>
+                <td class="letters__item"><a class="letters__link" href="#">Д</a></td>
               </tr>
               <tr>
-                <td class="letters__item"><a href="#">Е</a></td>
-                <td class="letters__item"><a href="#">З</a></td>
-                <td class="letters__item"><a href="#">И</a></td>
-                <td class="letters__item"><a href="#">К</a></td>
-                <td class="letters__item"><a href="#">Л</a></td>
+                <td class="letters__item"><a class="letters__link" href="#">Е</a></td>
+                <td class="letters__item"><a class="letters__link" href="#">З</a></td>
+                <td class="letters__item"><a class="letters__link" href="#">И</a></td>
+                <td class="letters__item"><a class="letters__link" href="#">К</a></td>
+                <td class="letters__item"><a class="letters__link" href="#">Л</a></td>
               </tr>
               <tr>
-                <td class="letters__item"><a href="#">М</a></td>
-                <td class="letters__item"><a href="#">Н</a></td>
-                <td class="letters__item"><a href="#">О</a></td>
-                <td class="letters__item"><a href="#">П</a></td>
-                <td class="letters__item"><a href="#">Р</a></td>
+                <td class="letters__item"><a class="letters__link" href="#">М</a></td>
+                <td class="letters__item"><a class="letters__link" href="#">Н</a></td>
+                <td class="letters__item"><a class="letters__link" href="#">О</a></td>
+                <td class="letters__item"><a class="letters__link" href="#">П</a></td>
+                <td class="letters__item"><a class="letters__link" href="#">Р</a></td>
               </tr>
               <tr>
-                <td class="letters__item"><a href="#">С</a></td>
-                <td class="letters__item"><a href="#">Т</a></td>
-                <td class="letters__item"><a href="#">У</a></td>
-                <td class="letters__item"><a href="#">Ф</a></td>
-                <td class="letters__item"><a href="#">Х</a></td>
+                <td class="letters__item"><a class="letters__link" href="#">С</a></td>
+                <td class="letters__item"><a class="letters__link" href="#">Т</a></td>
+                <td class="letters__item"><a class="letters__link" href="#">У</a></td>
+                <td class="letters__item"><a class="letters__link" href="#">Ф</a></td>
+                <td class="letters__item"><a class="letters__link" href="#">Х</a></td>
               </tr>
               <tr>
-                <td class="letters__item"><a href="#">Ч</a></td>
-                <td class="letters__item"><a href="#">Ш</a></td>
-                <td class="letters__item"><a href="#">Э</a></td>
-                <td class="letters__item"><a href="#">Ю</a></td>
-                <td class="letters__item"><a href="#">Я</a></td>
+                <td class="letters__item"><a class="letters__link" href="#">Ч</a></td>
+                <td class="letters__item"><a class="letters__link" href="#">Ш</a></td>
+                <td class="letters__item"><a class="letters__link" href="#">Э</a></td>
+                <td class="letters__item"><a class="letters__link" href="#">Ю</a></td>
+                <td class="letters__item"><a class="letters__link" href="#">Я</a></td>
               </tr>
             </tbody>
           </table>
           <ul class="filter-country__countries countries-list">
-            <li class="countries-list__country">
-              <a href="#">Афганистан</a>
+            <li>
+              <a class="countries-list__country" href="#">Афганистан</a>
             </li>
-            <li class="countries-list__country">
-              <a href="#">Албания</a>
+            <li>
+              <a class="countries-list__country" href="#">Албания</a>
             </li>
-            <li class="countries-list__country">
-              <a href="#">Алжир</a>
+            <li>
+              <a class="countries-list__country" href="#">Алжир</a>
             </li>
-            <li class="countries-list__country">
-              <a href="#">Андорра</a>
+            <li>
+              <a class="countries-list__country" href="#">Андорра</a>
             </li>
-            <li class="countries-list__country">
-              <a href="#">Аргентина</a>
+            <li>
+              <a class="countries-list__country" href="#">Аргентина</a>
             </li>
-            <li class="countries-list__country">
-              <a href="#">Армения</a>
+            <li>
+              <a class="countries-list__country" href="#">Армения</a>
             </li>
-            <li class="countries-list__country">
-              <a href="#">Австралия</a>
+            <li>
+              <a class="countries-list__country" href="#">Австралия</a>
             </li>
-            <li class="countries-list__country">
-              <a href="#">Австрия</a>
+            <li>
+              <a class="countries-list__country" href="#">Австрия</a>
             </li>
-            <li class="countries-list__country">
-              <a href="#">Азербайджан</a>
+            <li>
+              <a class="countries-list__country" href="#">Азербайджан</a>
             </li>
           </ul>
           <button
@@ -168,7 +172,7 @@
         >
           <fieldset class="filters__fieldset">
             <legend class="filters__legend">Хобби</legend>
-            <ul>
+            <ul class="filters__list">
               <li class="filters__item">
                 <input
                   class="filters__check"
@@ -205,7 +209,7 @@
             <legend class="filters__legend filters__legend--opened">
               Музыка
             </legend>
-            <ul>
+            <ul class="filters__list">
               <li class="filters__item">
                 <input
                   class="filters__check"
@@ -240,7 +244,7 @@
           </fieldset>
           <fieldset class="filters__fieldset">
             <legend class="filters__legend">Еда</legend>
-            <ul>
+            <ul class="filters__list">
               <li class="filters__item">
                 <input
                   class="filters__check"
@@ -357,6 +361,7 @@
                   type="text"
                   name="minlevel"
                   id="minlevel"
+                  value="30"
                 />
                 <label class="visually-hidden" for="minlevel"
                   >Минимальный уровень</label
@@ -366,6 +371,7 @@
                   type="text"
                   name="maxlevel"
                   id="maxlevel"
+                  value="100"
                 />
                 <label class="visually-hidden" for="maxlevel"
                   >Максимальный уровень</label
@@ -392,7 +398,7 @@
         <h2 class="visually-hidden">Список попутчиков</h2>
         <ul class="companions__list">
           <li class="companions__card pasteboard">
-            <a href="#">
+            <a class="pasteboard__link" href="#">
               <h3 class="pasteboard__name name name--offline name--left">
                 Таня Фирсова
               </h3>
@@ -400,14 +406,14 @@
             <a href="#">
               <img
                 class="pasteboard__photo photo photo--circle"
-                src="https://via.placeholder.com/70x70"
+                src="img/firsova-mobile@1x.jpg"
                 alt="Таня Фирсова"
                 width="70"
                 height="70"
               />
             </a>
             <div class="pasteboard__like like">
-              <button class="like__button" type="button">
+              <button class="like__button like__button--active" type="button">
                 <span class="visually-hidden">Лайк</span>
               </button>
               <span class="like__count">1,5 M</span>
@@ -489,12 +495,12 @@
             </ul>
             <div class="pasteboard__level level level--catalog">
               <span class="level__number level__number--catalog">99</span>
-              <span class="level__text level__text--catalog">level</span>
+              <span class="level__text pasteboard__header">левел:</span>
             </div>
             <a class="pasteboard__button button-rounded" href="#">Позвать!</a>
           </li>
           <li class="companions__card pasteboard">
-            <a href="#">
+            <a class="pasteboard__link" href="#">
               <h3 class="pasteboard__name name name--offline name--left">
                 Петя Демин
               </h3>
@@ -502,7 +508,7 @@
             <a href="#">
               <img
                 class="pasteboard__photo photo photo--circle"
-                src="https://via.placeholder.com/70x70"
+                src="img/demin-mobile@1x.jpg"
                 alt="Петя Демин"
                 width="70"
                 height="70"
@@ -581,12 +587,12 @@
             </ul>
             <div class="pasteboard__level level level--catalog">
               <span class="level__number level__number--catalog">80</span>
-              <span class="level__text level__text--catalog">level</span>
+              <span class="level__text pasteboard__header">левел:</span>
             </div>
             <a class="pasteboard__button button-rounded" href="#">Позвать!</a>
           </li>
           <li class="companions__card pasteboard">
-            <a href="#">
+            <a class="pasteboard__link" href="#">
               <h3 class="pasteboard__name name name--offline name--left">
                 Марк Смолов
               </h3>
@@ -594,7 +600,7 @@
             <a href="#">
               <img
                 class="pasteboard__photo photo photo--circle"
-                src="https://via.placeholder.com/70x70"
+                src="img/smolov-mobile@1x.jpg"
                 alt="Марк Смолов"
                 width="70"
                 height="70"
@@ -683,12 +689,12 @@
             </ul>
             <div class="pasteboard__level level level--catalog">
               <span class="level__number level__number--catalog">25</span>
-              <span class="level__text level__text--catalog">level</span>
+              <span class="level__text pasteboard__header">левел:</span>
             </div>
             <a class="pasteboard__button button-rounded" href="#">Позвать!</a>
           </li>
           <li class="companions__card pasteboard">
-            <a href="#">
+            <a class="pasteboard__link" href="#">
               <h3 class="pasteboard__name name name--onine name--left">
                 Лариса Роговая
               </h3>
@@ -696,7 +702,7 @@
             <a href="#">
               <img
                 class="pasteboard__photo photo photo--circle"
-                src="https://via.placeholder.com/70x70"
+                src="img/rogovaya-mobile@1x.jpg"
                 alt="Лариса Роговая"
                 width="70"
                 height="70"
@@ -775,7 +781,7 @@
             </ul>
             <div class="pasteboard__level level level--catalog">
               <span class="level__number level__number--catalog">50</span>
-              <span class="level__text level__text--catalog">level</span>
+              <span class="level__text pasteboard__header">левел:</span>
             </div>
             <a class="pasteboard__button button-rounded" href="#">Позвать!</a>
           </li>
@@ -804,12 +810,12 @@
     </main>
 
     <footer class="page-footer">
-      <a class="page-footer__logo">
+      <a class="page-footer__logo" href="index.html">
         <img
           class="page-footer__logo-image"
-          src="https://via.placeholder.com/96x15"
-          width="96"
-          height="15"
+          src="img/logo-mobile-blue@1x.png"
+          width="100"
+          height="19"
           alt="Погнали"
         />
       </a>

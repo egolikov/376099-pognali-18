@@ -1,0 +1,14 @@
+.like__button {
+  background-color: #edeff6;
+
+  &--active {
+    background-color: #f9eaea;
+  }
+}
+
+.like__count {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 700;
+  color: #161c35;
+}

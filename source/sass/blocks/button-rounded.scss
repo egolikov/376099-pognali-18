@@ -1,0 +1,23 @@
+.button-rounded {
+  font-family: "Blogger Sans", "Arial", sans-serif;
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #161c35;
+
+  background-color: #ffd74b;
+
+  &--close {
+    background-color: #d6daed;
+  }
+
+  &--white {
+    background-color: #ffffff;
+  }
+
+  &--blue {
+    background-color: #dfe3f0;
+  }
+}
